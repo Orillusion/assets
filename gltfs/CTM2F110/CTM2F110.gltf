@@ -1,0 +1,1335 @@
+{
+  "asset": {
+    "version": "2.0",
+    "generator": "babylon.js glTF exporter for 3dsmax 2021 v20210727.3"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "rotation": [
+        0.7071068,
+        0,
+        0,
+        0.7071067
+      ],
+      "name": "CTM2F110",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        2,
+        6,
+        12,
+        18
+      ],
+      "name": "Object"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Base"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "mesh": 0,
+      "translation": [
+        0,
+        -1.66672023e-11,
+        -0.000102302554
+      ],
+      "name": "Pedestal",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 1,
+      "name": "Connector"
+    },
+    {
+      "mesh": 2,
+      "name": "CoverPlate02"
+    },
+    {
+      "children": [
+        7,
+        8,
+        9
+      ],
+      "name": "Finger1"
+    },
+    {
+      "mesh": 3,
+      "translation": [
+        -0.05699999,
+        -1.525879e-8,
+        -0.07824999
+      ],
+      "name": "CooperativeArm1",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 4,
+      "translation": [
+        -0.023999989,
+        -1.525879e-8,
+        -0.09024997
+      ],
+      "name": "DriveArm1",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        10
+      ],
+      "mesh": 5,
+      "translation": [
+        -0.09545833,
+        -2.28881838e-8,
+        -0.117568582
+      ],
+      "name": "ParallelBlock1",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        11
+      ],
+      "mesh": 6,
+      "translation": [
+        0.09545833,
+        1.91543545e-8,
+        0.117568582
+      ],
+      "name": "FingerTip1",
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 7,
+      "name": "FingerPad1"
+    },
+    {
+      "children": [
+        13,
+        14,
+        15
+      ],
+      "name": "Finger2"
+    },
+    {
+      "mesh": 8,
+      "translation": [
+        0.0570000149,
+        -1.525879e-8,
+        -0.078249976
+      ],
+      "rotation": [
+        0,
+        0,
+        1,
+        7.54979e-8
+      ],
+      "name": "CooperativeArm2",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 9,
+      "translation": [
+        0.0240000132,
+        -1.525879e-8,
+        -0.09027253
+      ],
+      "rotation": [
+        -7.54978942e-8,
+        -7.549789e-8,
+        1,
+        -1.50995817e-7
+      ],
+      "name": "DriveArm2",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        16
+      ],
+      "mesh": 10,
+      "translation": [
+        0.09538114,
+        -2.28881838e-8,
+        -0.117643945
+      ],
+      "rotation": [
+        0,
+        0,
+        1,
+        7.54979e-8
+      ],
+      "name": "ParallelBlock2",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "children": [
+        17
+      ],
+      "mesh": 11,
+      "translation": [
+        0.09538114,
+        -4.309775e-8,
+        0.117643945
+      ],
+      "rotation": [
+        0,
+        0,
+        1,
+        -7.54979e-8
+      ],
+      "name": "FingerTip2",
+      "scale": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "mesh": 12,
+      "name": "FingerPad2"
+    },
+    {
+      "children": [
+        19
+      ],
+      "translation": [
+        0.000282317167,
+        0.0240549855,
+        -0.074339956
+      ],
+      "rotation": [
+        8.42937e-8,
+        -0.7071068,
+        1.46110949e-7,
+        0.7071067
+      ],
+      "scale": [
+        1.69399989,
+        1.69399989,
+        1.69399989
+      ],
+      "name": "Logo"
+    },
+    {
+      "mesh": 13,
+      "translation": [
+        3.81469745e-9,
+        -7.629395e-9,
+        0
+      ],
+      "rotation": [
+        5.26501225e-8,
+        1.77635642e-15,
+        -1.77635642e-15,
+        1
+      ],
+      "scale": [
+        1.00000024,
+        1.00000024,
+        1.00000024
+      ],
+      "name": "ChangingTek"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1,
+            "NORMAL": 2
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "Pedestal"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5
+          },
+          "indices": 3,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "Connector"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 7,
+            "NORMAL": 8
+          },
+          "indices": 6,
+          "material": 2,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "CoverPlate02"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 10,
+            "NORMAL": 11
+          },
+          "indices": 9,
+          "material": 3,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 3,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "CooperativeArm1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 13,
+            "NORMAL": 14
+          },
+          "indices": 12,
+          "material": 4,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 4,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "DriveArm1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 16,
+            "NORMAL": 17
+          },
+          "indices": 15,
+          "material": 5,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 5,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "ParallelBlock1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 19,
+            "NORMAL": 20
+          },
+          "indices": 18,
+          "material": 6,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 6,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "FingerTip1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 22,
+            "NORMAL": 23
+          },
+          "indices": 21,
+          "material": 7,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 7,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "FingerPad1"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 25,
+            "NORMAL": 26
+          },
+          "indices": 24,
+          "material": 3,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 8,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "CooperativeArm2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 28,
+            "NORMAL": 29
+          },
+          "indices": 27,
+          "material": 4,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 9,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "DriveArm2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 31,
+            "NORMAL": 32
+          },
+          "indices": 30,
+          "material": 5,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 10,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "ParallelBlock2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 34,
+            "NORMAL": 35
+          },
+          "indices": 33,
+          "material": 6,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 11,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "FingerTip2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 37,
+            "NORMAL": 38
+          },
+          "indices": 36,
+          "material": 7,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 12,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "FingerPad2"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 40,
+            "NORMAL": 41
+          },
+          "indices": 39,
+          "material": 8,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 13,
+              "attributes": {
+                "POSITION": 0,
+                "NORMAL": 1
+              }
+            }
+          }
+        }
+      ],
+      "name": "ChangingTek"
+    }
+  ],
+  "accessors": [
+    {
+      "componentType": 5123,
+      "count": 96006,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 18353,
+      "max": [
+        0.06296793604529086,
+        0.03750422996515291,
+        -0.009491189945675382
+      ],
+      "min": [
+        -0.06296791604529085,
+        -0.03755768834529085,
+        -0.10725768604529085
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 18353,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 7734,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 1863,
+      "max": [
+        0.037490846367734844,
+        0.03750457791613258,
+        0.0015053073827137886
+      ],
+      "min": [
+        -0.037504575716132575,
+        -0.03750457791613258,
+        -0.009504580916132576
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 1863,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 5838,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 1362,
+      "max": [
+        0.013503611509186358,
+        0.020002383355380585,
+        -0.10149702396062991
+      ],
+      "min": [
+        -0.013502432555380577,
+        -0.020002501555380577,
+        -0.11025244155538058
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 1362,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 24288,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 4432,
+      "max": [
+        0.006001619071184759,
+        0.015001936987709208,
+        0.006002751065068666
+      ],
+      "min": [
+        -0.044461104385068666,
+        -0.015003179585068669,
+        -0.045321378285068666
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 4432,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 36588,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 6298,
+      "max": [
+        0.01198815760681194,
+        0.030003678433052555,
+        0.011999300607214797
+      ],
+      "min": [
+        -0.04444839473305255,
+        -0.030003648633052556,
+        -0.045301562333052554
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 6298,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 7674,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 1558,
+      "max": [
+        0.039002709890154426,
+        0.008103071911127389,
+        0.006000777430763594
+      ],
+      "min": [
+        -0.0059952542901544285,
+        -0.008102786290154427,
+        -0.02300279289015443
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 1558,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 6318,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 1335,
+      "max": [
+        -0.05345571327559056,
+        0.011501356821223215,
+        -0.14056620296246108
+      ],
+      "min": [
+        -0.07046076103753891,
+        -0.011502352337538912,
+        -0.18007105303753893
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 1335,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 276,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 102,
+      "max": [
+        -0.05145478856601356,
+        0.011501320986559241,
+        -0.14056620296337669
+      ],
+      "min": [
+        -0.053460771036623334,
+        -0.011502379436623328,
+        -0.18007103803662333
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 24288,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 4432,
+      "max": [
+        0.00600223142603247,
+        0.015001875040948546,
+        0.006002595458521637
+      ],
+      "min": [
+        -0.04438375696852164,
+        -0.015003228868521639,
+        -0.04539663376852164
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 4432,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 36570,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 6294,
+      "max": [
+        0.01198907692693646,
+        0.03000366543703229,
+        0.011998559573783797
+      ],
+      "min": [
+        -0.04437795233703229,
+        -0.03000372683703229,
+        -0.045371950037032295
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 6294,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 7674,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 1563,
+      "max": [
+        0.038996645929805285,
+        0.008103651780992491,
+        0.006002016012067384
+      ],
+      "min": [
+        -0.0059954139298052855,
+        -0.008102825929805288,
+        -0.023022462029805287
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 1563,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 6318,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 1331,
+      "max": [
+        0.07039911731364829,
+        0.011501412390892998,
+        -0.1406541784386254
+      ],
+      "min": [
+        0.053390374938625404,
+        -0.011502471561374595,
+        -0.1801676115613746
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 1331,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 276,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 102,
+      "max": [
+        0.05341569703617164,
+        0.01150181053286944,
+        -0.14066276290245988
+      ],
+      "min": [
+        0.05139037510245986,
+        -0.011502471097540132,
+        -0.18016859609754013
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 102,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    },
+    {
+      "componentType": 5123,
+      "count": 11856,
+      "type": "SCALAR",
+      "name": "accessorIndices"
+    },
+    {
+      "componentType": 5126,
+      "count": 4176,
+      "max": [
+        0.005588782600567662,
+        0.0010013517770478375,
+        0.008526779396213147
+      ],
+      "min": [
+        -0.005588468316213148,
+        -0.00000104090621347001,
+        -0.008528468906213147
+      ],
+      "type": "VEC3",
+      "name": "accessorPositions"
+    },
+    {
+      "componentType": 5126,
+      "count": 4176,
+      "type": "VEC3",
+      "name": "accessorNormals"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 68193
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 68200,
+      "byteLength": 7284
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 75488,
+      "byteLength": 5058
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 80552,
+      "byteLength": 16896
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 97448,
+      "byteLength": 24479
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 121928,
+      "byteLength": 5738
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 127672,
+      "byteLength": 5460
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 133136,
+      "byteLength": 470
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 133608,
+      "byteLength": 16782
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 150392,
+      "byteLength": 24532
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 174928,
+      "byteLength": 5813
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 180744,
+      "byteLength": 5467
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 186216,
+      "byteLength": 477
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 186696,
+      "byteLength": 8273
+    }
+  ],
+  "buffers": [
+    {
+      "name": "CTM2F110",
+      "byteLength": 194976,
+      "uri": "CTM2F110.bin"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.101961,
+          0.101961,
+          0.101961,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.96125
+      },
+      "doubleSided": true,
+      "name": "PedestalMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.101961,
+          0.101961,
+          0.101961,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.96125
+      },
+      "doubleSided": true,
+      "name": "ConnectorMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.101961,
+          0.101961,
+          0.101961,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.96125
+      },
+      "doubleSided": true,
+      "name": "CoverPlate",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.698039,
+          0.768627,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.97484374
+      },
+      "doubleSided": true,
+      "name": "CooperativeArmMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.2,
+          0.2,
+          0.2,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.97484374
+      },
+      "doubleSided": true,
+      "name": "DriveArmMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.792157,
+          0.819608,
+          0.933333,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.97484374
+      },
+      "doubleSided": true,
+      "name": "ParallelBlockMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.792157,
+          0.819608,
+          0.933333,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.97484374
+      },
+      "doubleSided": true,
+      "name": "FingerTipMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.792157,
+          0.819608,
+          0.933333,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.97484374
+      },
+      "doubleSided": true,
+      "name": "FingerPadMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0
+      },
+      "doubleSided": true,
+      "name": "ChangingTekMaterial",
+      "extras": {
+        "babylonSeparateCullingPass": false
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
