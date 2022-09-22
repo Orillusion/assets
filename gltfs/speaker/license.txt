@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bluetooth Speaker
+* source:	https://sketchfab.com/3d-models/bluetooth-speaker-e5de4a6b4c13483aa5e2e7a81ab7228c
+* author:	Erdem Dağdelen (https://sketchfab.com/erdemdagdelen)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bluetooth Speaker" (https://sketchfab.com/3d-models/bluetooth-speaker-e5de4a6b4c13483aa5e2e7a81ab7228c) by Erdem Dağdelen (https://sketchfab.com/erdemdagdelen) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
