@@ -1,0 +1,1365 @@
+{
+  "textures": [
+    {
+      "index": 0,
+      "textureSource": {
+        "type": "cube-atmospheric-scattering"
+      },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "clamp-to-edge",
+      "addressModeV": "clamp-to-edge",
+      "visibility": 2,
+      "format": "rgba16float",
+      "useMipmap": true,
+      "data": {
+        "sunRadius": 500,
+        "sunRadiance": 10,
+        "mieG": 0.76,
+        "mieHeight": 1200,
+        "eyePos": 1500,
+        "sunX": 0.55,
+        "sunY": 0.54,
+        "sunBrightness": 1,
+        "displaySun": true,
+        "defaultTextureCubeSize": 512,
+        "defaultTexture2DSize": 1024
+      }
+    },
+    {
+      "index": 1,
+      "textureSource": {
+        "type": "internal",
+        "name": "BRDFLUT"
+      }
+    },
+    {
+      "index": 2,
+      "textureSource": {
+        "type": "internal",
+        "name": "default-grayTexture"
+      }
+    },
+    {
+      "index": 3,
+      "textureSource": {
+        "type": "internal",
+        "name": "default-normalTexture"
+      }
+    },
+    {
+      "index": 4,
+      "textureSource": {
+        "type": "internal",
+        "name": "default-blackTexture"
+      }
+    },
+    {
+      "index": 5,
+      "textureSource": {
+        "type": "net-image",
+        "url": "gltfs/dizuo/0_diffuse.jpg"
+      },
+      "name": "0_diffuse",
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 6,
+      "textureSource": {
+        "type": "gltf-image",
+        "url": "PBR/Duck/DuckCM.png",
+        "index": 0,
+        "srcGLTF": "PBR/Duck/Duck.gltf"
+      },
+      "name": "DuckCM",
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": "skyMaterial",
+      "className": "SkyMaterial",
+      "vsShader": "Sky_glsl_vs",
+      "fsShader": "sky_fs_frag_wgsl",
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less-equal",
+        "depthWriteEnabled": false,
+        "frontFace": "cw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": false,
+        "useProbe": false,
+        "acceptGI": false,
+        "acceptShadow": false,
+        "castShadow": false,
+        "receiveEnv": false,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true
+      },
+      "defineValue": {
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": false,
+        "USE_CASTSHADOW": false,
+        "USE_SHADOWMAPING": false,
+        "USE_LIGHT": false,
+        "USE_VERTXCOLOR": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {},
+      "uniforms": {
+        "eyesPos": {
+          "type": "v3",
+          "numbers": [
+            0,
+            0,
+            0
+          ]
+        },
+        "exposure": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "textures": {
+        "baseMap": 0,
+        "envMap": 0,
+        "prefilterMap": 0
+      }
+    },
+    {
+      "index": 1,
+      "name": "myMaterial1",
+      "className": "_HDRLitMaterial",
+      "vsShader": "Stand_vert_wgsl",
+      "fsShader": "Stand_frag_wgsl",
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less-equal",
+        "depthWriteEnabled": false,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {},
+      "uniforms": {
+        "irradianceData": {
+          "type": "none"
+        },
+        "CameraPos": {
+          "type": "v3",
+          "numbers": [
+            0,
+            0,
+            0
+          ]
+        },
+        "shadowBias": {
+          "type": "number",
+          "value": 0.00035
+        },
+        "transformUV1": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "transformUV2": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "baseColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "emissiveColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "materialF0": {
+          "type": "v4",
+          "numbers": [
+            0.04,
+            0.04,
+            0.04,
+            1
+          ]
+        },
+        "envIntensity": {
+          "type": "number",
+          "value": 1
+        },
+        "normalScale": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness": {
+          "type": "number",
+          "value": 0.85
+        },
+        "metallic": {
+          "type": "number",
+          "value": 0.1
+        },
+        "ao": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness_min": {
+          "type": "number",
+          "value": 0
+        },
+        "roughness_max": {
+          "type": "number",
+          "value": 1
+        },
+        "metallic_min": {
+          "type": "number",
+          "value": 0
+        },
+        "metallic_max": {
+          "type": "number",
+          "value": 1
+        },
+        "emissiveIntensity": {
+          "type": "number",
+          "value": 0
+        },
+        "alphaCutoff": {
+          "type": "number",
+          "value": 0
+        },
+        "ior": {
+          "type": "number",
+          "value": 1.5
+        },
+        "clearcoatFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatRoughnessFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "clearcoatWeight": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "textures": {
+        "brdfLUT": 1,
+        "brdflutMap": 1,
+        "baseMap": 2,
+        "normalMap": 3,
+        "emissiveMap": 4,
+        "envMap": 0,
+        "prefilterMap": 0
+      }
+    },
+    {
+      "index": 2,
+      "name": "myMaterial2",
+      "className": "_HDRLitMaterial",
+      "vsShader": "Stand_vert_wgsl",
+      "fsShader": "Stand_frag_wgsl",
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less-equal",
+        "depthWriteEnabled": false,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {},
+      "uniforms": {
+        "irradianceData": {
+          "type": "none"
+        },
+        "CameraPos": {
+          "type": "v3",
+          "numbers": [
+            0,
+            0,
+            0
+          ]
+        },
+        "shadowBias": {
+          "type": "number",
+          "value": 0.00035
+        },
+        "transformUV1": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "transformUV2": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "baseColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "emissiveColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "materialF0": {
+          "type": "v4",
+          "numbers": [
+            0.04,
+            0.04,
+            0.04,
+            1
+          ]
+        },
+        "envIntensity": {
+          "type": "number",
+          "value": 1
+        },
+        "normalScale": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness": {
+          "type": "number",
+          "value": 0.85
+        },
+        "metallic": {
+          "type": "number",
+          "value": 0.1
+        },
+        "ao": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness_min": {
+          "type": "number",
+          "value": 0
+        },
+        "roughness_max": {
+          "type": "number",
+          "value": 1
+        },
+        "metallic_min": {
+          "type": "number",
+          "value": 0
+        },
+        "metallic_max": {
+          "type": "number",
+          "value": 1
+        },
+        "emissiveIntensity": {
+          "type": "number",
+          "value": 0
+        },
+        "alphaCutoff": {
+          "type": "number",
+          "value": 0
+        },
+        "ior": {
+          "type": "number",
+          "value": 1.5
+        },
+        "clearcoatFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatRoughnessFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "clearcoatWeight": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "textures": {
+        "brdfLUT": 1,
+        "brdflutMap": 1,
+        "baseMap": 5,
+        "normalMap": 3,
+        "emissiveMap": 4,
+        "envMap": 0,
+        "prefilterMap": 0
+      }
+    },
+    {
+      "index": 3,
+      "name": "blinn3-fx",
+      "className": "_HDRLitMaterial",
+      "vsShader": "Stand_vert_wgsl",
+      "fsShader": "Stand_frag_wgsl",
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less-equal",
+        "depthWriteEnabled": false,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false
+      },
+      "constValues": {},
+      "uniforms": {
+        "irradianceData": {
+          "type": "none"
+        },
+        "CameraPos": {
+          "type": "v3",
+          "numbers": [
+            0,
+            0,
+            0
+          ]
+        },
+        "shadowBias": {
+          "type": "number",
+          "value": 0.00035
+        },
+        "transformUV1": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "transformUV2": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "baseColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "emissiveColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "materialF0": {
+          "type": "v4",
+          "numbers": [
+            0.04,
+            0.04,
+            0.04,
+            1
+          ]
+        },
+        "envIntensity": {
+          "type": "number",
+          "value": 1
+        },
+        "normalScale": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness": {
+          "type": "number",
+          "value": 0.5
+        },
+        "metallic": {
+          "type": "number",
+          "value": 0
+        },
+        "ao": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness_min": {
+          "type": "number",
+          "value": 0
+        },
+        "roughness_max": {
+          "type": "number",
+          "value": 1
+        },
+        "metallic_min": {
+          "type": "number",
+          "value": 0
+        },
+        "metallic_max": {
+          "type": "number",
+          "value": 1
+        },
+        "emissiveIntensity": {
+          "type": "number",
+          "value": 1
+        },
+        "alphaCutoff": {
+          "type": "number",
+          "value": 0
+        },
+        "ior": {
+          "type": "number",
+          "value": 1.5
+        },
+        "clearcoatFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatRoughnessFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "clearcoatWeight": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "textures": {
+        "brdfLUT": 1,
+        "brdflutMap": 1,
+        "baseMap": 6,
+        "normalMap": 3,
+        "emissiveMap": 4,
+        "envMap": 0,
+        "prefilterMap": 0
+      }
+    }
+  ],
+  "geometries": [
+    {
+      "index": 0,
+      "data": {
+        "radius": 2000,
+        "widthSegments": 20,
+        "heightSegments": 20
+      },
+      "geometrySource": {
+        "type": "primitive-sphere"
+      },
+      "name": "default-sphereGeometry"
+    },
+    {
+      "index": 1,
+      "data": {
+        "width": 500,
+        "height": 500,
+        "segmentW": 4,
+        "segmentH": 1,
+        "up": {
+          "type": "v3",
+          "numbers": [
+            0,
+            1,
+            0
+          ]
+        }
+      },
+      "geometrySource": {
+        "type": "primitive-plane"
+      },
+      "name": "default-planeGeometry"
+    },
+    {
+      "index": 2,
+      "data": {
+        "width": 100,
+        "height": 20,
+        "depth": 50
+      },
+      "geometrySource": {
+        "type": "primitive-box"
+      },
+      "name": "boxGeometry61F270E6AA090EE3"
+    },
+    {
+      "index": 3,
+      "geometrySource": {
+        "type": "gltf-geometry",
+        "key": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
+        "srcGLTF": "PBR/Duck/Duck.gltf"
+      },
+      "name": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0"
+    }
+  ],
+  "gltfList": [
+    "PBR/Duck/Duck.gltf"
+  ],
+  "version": {
+    "major": 1,
+    "minor": 0
+  },
+  "hierarchy": [
+    {
+      "index": 0,
+      "name": "",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "isScene3D": true,
+      "skyRenderer": {
+        "enable": true,
+        "componentType": "skyRenderer",
+        "geometry": 0,
+        "roughness": 0,
+        "exposure": 1,
+        "materials": [
+          0
+        ]
+      },
+      "children": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "index": 1,
+      "name": "",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              -134.99999966351967,
+              -44.99999949527953,
+              -179.9999997620725
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              59.99999999999918,
+              84.85281374238453,
+              59.9999999999992
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "componentType": "camera3D",
+          "fov": 60,
+          "near": 1,
+          "far": 5000,
+          "cameraType": 1,
+          "isShadowCamera": false,
+          "isMainCamera": true
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "myDirectLight",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              21,
+              108,
+              10
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "componentType": "light",
+          "size": 1,
+          "dirFix": 1,
+          "lightData": {
+            "lightType": 2,
+            "radius": 0.5,
+            "intensity": 34.54,
+            "linear": 0,
+            "quadratic": 0.032,
+            "lightColor": {
+              "type": "rgba",
+              "numbers": [
+                1,
+                0.9209234507365888,
+                0.853759283180597,
+                1
+              ]
+            },
+            "innerAngle": 0,
+            "outerAngle": 1,
+            "range": 9007199254740991,
+            "castGI": true,
+            "castShadow": true
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "floor",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "componentType": "meshRenderer",
+          "geometry": 1,
+          "materials": [
+            1
+          ]
+        }
+      ],
+      "children": [
+        4
+      ]
+    },
+    {
+      "index": 4,
+      "name": "box",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "componentType": "meshRenderer",
+          "geometry": 2,
+          "materials": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "GLTF_NO_NAME_SCENE",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              -16,
+              0,
+              36
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              0.15,
+              0.15,
+              0.15
+            ]
+          }
+        }
+      ],
+      "children": [
+        6
+      ]
+    },
+    {
+      "index": 6,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "children": [
+        7,
+        9
+      ]
+    },
+    {
+      "index": 7,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ],
+      "children": [
+        8
+      ]
+    },
+    {
+      "index": 8,
+      "name": "LOD3spShape0",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "componentType": "meshRenderer",
+          "geometry": 3,
+          "materials": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "engineSetting": {
+    "occlusionQuerySetting": {
+      "enable": true,
+      "debug": false
+    },
+    "renderSetting": {
+      "renderPassState": 4,
+      "renderState_left": 5,
+      "renderState_right": 5,
+      "renderState_split": 0.5,
+      "quadScale": 1,
+      "hdrExposure": 1.5,
+      "debugQuad": -1,
+      "maxPointLight": 1000,
+      "maxDirectLight": 4,
+      "maxSportLight": 1000,
+      "drawOpMin": 0,
+      "drawOpMax": 9007199254740991,
+      "drawTrMin": 0,
+      "drawTrMax": 9007199254740991,
+      "zPrePass": true,
+      "postProcessing": {
+        "globalFog": {
+          "enable": false,
+          "fogType": 0,
+          "height": 100,
+          "start": 400,
+          "end": 0,
+          "density": 0.02,
+          "ins": 1,
+          "fogColor": {
+            "r": 0.32941176470588235,
+            "g": 0.35294117647058826,
+            "b": 0.9372549019607843,
+            "a": 1
+          }
+        },
+        "ssao": {
+          "enable": false,
+          "radius": 0.15,
+          "bias": -0.1,
+          "aoPower": 2,
+          "debug": true
+        },
+        "outline": {
+          "enable": false,
+          "strength": 1,
+          "groupCount": 4,
+          "outlinePixel": 2,
+          "fadeOutlinePixel": 4,
+          "useAddMode": false,
+          "debug": true
+        },
+        "taa": {
+          "enable": false,
+          "jitterSeedCount": 8,
+          "blendFactor": 0.1,
+          "sharpFactor": 0.6,
+          "sharpPreBlurFactor": 0.5,
+          "temporalJitterScale": 0.13,
+          "debug": true
+        },
+        "gtao": {
+          "enable": false,
+          "darkFactor": 1,
+          "maxDistance": 5,
+          "maxPixel": 50,
+          "rayMarchSegment": 6,
+          "multiBounce": false,
+          "usePosFloat32": true,
+          "blendColor": true,
+          "debug": true
+        },
+        "ssr": {
+          "enable": false,
+          "pixelRatio": 1,
+          "fadeEdgeRatio": 0.2,
+          "rayMarchRatio": 0.5,
+          "fadeDistanceMin": 600,
+          "fadeDistanceMax": 2000,
+          "roughnessThreshold": 0.5,
+          "powDotRN": 0.2,
+          "mixThreshold": 0.1,
+          "debug": true
+        },
+        "bloom": {
+          "enable": true,
+          "blurX": 4,
+          "blurY": 4,
+          "intensity": 0.5,
+          "brightness": 1.25,
+          "debug": false
+        },
+        "fxaa": {
+          "enable": true
+        },
+        "depthOfView": {
+          "enable": false,
+          "iterationCount": 3,
+          "pixelOffset": 1,
+          "near": 150,
+          "far": 300
+        }
+      }
+    },
+    "renderJobSetting": {
+      "type": "Forward"
+    },
+    "shadowSetting": {
+      "enable": true,
+      "type": "PCF",
+      "shadowBias": 0.002,
+      "shadowQuality": 2.5,
+      "shadowBound": 100,
+      "shadowSize": 2048,
+      "shadowNear": 1,
+      "shadowFar": 3000,
+      "needUpdate": true,
+      "autoUpdate": true,
+      "updateFrameRate": 5,
+      "debug": false
+    },
+    "globalIlluminationSetting": {
+      "enable": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "probeSpace": 64,
+      "probeXCount": 4,
+      "probeYCount": 2,
+      "probeZCount": 4,
+      "probeSize": 32,
+      "probeSourceTextureSize": 2048,
+      "octRTMaxSize": 2048,
+      "octRTSideSize": 16,
+      "maxDistance": 120,
+      "normalBias": 0.25,
+      "depthSharpness": 50,
+      "hysteresis": 0.98,
+      "irradianceChebyshevBias": 0.01,
+      "irradianceVarianceBias": 2.316,
+      "irradianceDistanceBias": 32,
+      "indirectIntensity": 1,
+      "bounceIntensity": 0.5,
+      "probeRoughness": 1,
+      "realTimeGI": false,
+      "debug": false,
+      "autoRenderProbe": false
+    },
+    "skySetting": {
+      "type": "HDRSKY",
+      "sky": null,
+      "skyExposure": 1,
+      "defaultFar": 2000,
+      "defaultNear": 1
+    },
+    "lightSetting": {
+      "maxLight": 1024
+    }
+  }
+}
