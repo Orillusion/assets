@@ -1,0 +1,461 @@
+{
+  "version": {
+    "major": 1,
+    "minor": 0
+  },
+  "hierarchy": [
+    {
+      "index": 0,
+      "name": "GLTF_NO_NAME_SCENE",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              0.15,
+              0.15,
+              0.15
+            ]
+          },
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              -16,
+              0,
+              36
+            ]
+          }
+        }
+      ],
+      "children": [
+        1
+      ]
+    },
+    {
+      "index": 1,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          },
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "children": [
+        2,
+        4
+      ]
+    },
+    {
+      "index": 2,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          },
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "children": [
+        3
+      ]
+    },
+    {
+      "index": 3,
+      "name": "LOD3spShape0",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          },
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "enable": true,
+          "componentType": "meshRenderer",
+          "geometry": 0,
+          "materials": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "transform",
+          "scale": {
+            "type": "v3",
+            "numbers": [
+              1,
+              1,
+              1
+            ]
+          },
+          "euler": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "numbers": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "textureSource": {
+        "type": "internal",
+        "name": "BRDFLUT"
+      }
+    },
+    {
+      "index": 1,
+      "name": "DuckCM",
+      "textureSource": {
+        "type": "gltf-image",
+        "url": "PBR/Duck/DuckCM.png",
+        "index": 0,
+        "srcGLTF": "PBR/Duck/Duck.gltf"
+      },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 2,
+      "textureSource": {
+        "type": "internal",
+        "name": "default-normalTexture"
+      }
+    },
+    {
+      "index": 3,
+      "textureSource": {
+        "type": "internal",
+        "name": "default-blackTexture"
+      }
+    },
+    {
+      "index": 4,
+      "data": {
+        "sunRadius": 500,
+        "sunRadiance": 10,
+        "mieG": 0.76,
+        "mieHeight": 1200,
+        "eyePos": 1500,
+        "sunX": 0.55,
+        "sunY": 0.54,
+        "sunBrightness": 1,
+        "displaySun": true,
+        "defaultTextureCubeSize": 512,
+        "defaultTexture2DSize": 1024
+      },
+      "textureSource": {
+        "type": "cube-atmospheric-scattering"
+      },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "clamp-to-edge",
+      "addressModeV": "clamp-to-edge",
+      "visibility": 2,
+      "format": "rgba16float",
+      "useMipmap": true
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": "blinn3-fx",
+      "vsShader": "Stand_vert_wgsl",
+      "fsShader": "Stand_frag_wgsl",
+      "className": "HDRLitMaterial",
+      "textures": {
+        "brdfLUT": 0,
+        "brdflutMap": 0,
+        "baseMap": 1,
+        "normalMap": 2,
+        "emissiveMap": 3,
+        "envMap": 4,
+        "prefilterMap": 4
+      },
+      "uniforms": {
+        "irradianceData": {
+          "type": "none"
+        },
+        "CameraPos": {
+          "type": "v3",
+          "numbers": [
+            0,
+            0,
+            0
+          ]
+        },
+        "shadowBias": {
+          "type": "number",
+          "value": 0.00035
+        },
+        "transformUV1": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "transformUV2": {
+          "type": "v4",
+          "numbers": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "baseColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "emissiveColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "materialF0": {
+          "type": "v4",
+          "numbers": [
+            0.04,
+            0.04,
+            0.04,
+            1
+          ]
+        },
+        "envIntensity": {
+          "type": "number",
+          "value": 1
+        },
+        "normalScale": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness": {
+          "type": "number",
+          "value": 0.5
+        },
+        "metallic": {
+          "type": "number",
+          "value": 0
+        },
+        "ao": {
+          "type": "number",
+          "value": 1
+        },
+        "roughness_min": {
+          "type": "number",
+          "value": 0
+        },
+        "roughness_max": {
+          "type": "number",
+          "value": 1
+        },
+        "metallic_min": {
+          "type": "number",
+          "value": 0
+        },
+        "metallic_max": {
+          "type": "number",
+          "value": 1
+        },
+        "emissiveIntensity": {
+          "type": "number",
+          "value": 1
+        },
+        "alphaCutoff": {
+          "type": "number",
+          "value": 0
+        },
+        "ior": {
+          "type": "number",
+          "value": 1.5
+        },
+        "clearcoatFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatRoughnessFactor": {
+          "type": "number",
+          "value": 0
+        },
+        "clearcoatColor": {
+          "type": "rgba",
+          "numbers": [
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "clearcoatWeight": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less-equal",
+        "depthWriteEnabled": false,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false
+      },
+      "constValues": {}
+    }
+  ],
+  "geometries": [
+    {
+      "index": 0,
+      "name": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
+      "geometrySource": {
+        "type": "gltf-geometry",
+        "key": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
+        "srcGLTF": "PBR/Duck/Duck.gltf"
+      }
+    }
+  ],
+  "gltfList": [
+    "PBR/Duck/Duck.gltf"
+  ]
+}
