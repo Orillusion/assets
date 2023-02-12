@@ -533,7 +533,7 @@
       "name": "myMaterial1",
       "vsShader": "Stand_vert_wgsl",
       "fsShader": "Stand_frag_wgsl",
-      "className": "HDRLitMaterial",
+      "className": "LitMaterial",
       "textures": {
         "brdfLUT": 1,
         "brdflutMap": 1,
@@ -715,7 +715,7 @@
       "name": "myMaterial2",
       "vsShader": "Stand_vert_wgsl",
       "fsShader": "Stand_frag_wgsl",
-      "className": "HDRLitMaterial",
+      "className": "LitMaterial",
       "textures": {
         "brdfLUT": 1,
         "brdflutMap": 1,
@@ -897,7 +897,7 @@
       "name": "blinn3-fx",
       "vsShader": "Stand_vert_wgsl",
       "fsShader": "Stand_frag_wgsl",
-      "className": "HDRLitMaterial",
+      "className": "LitMaterial",
       "textures": {
         "brdfLUT": 1,
         "brdflutMap": 1,

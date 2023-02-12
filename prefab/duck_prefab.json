@@ -269,7 +269,7 @@
       "name": "blinn3-fx",
       "vsShader": "Stand_vert_wgsl",
       "fsShader": "Stand_frag_wgsl",
-      "className": "HDRLitMaterial",
+      "className": "LitMaterial",
       "textures": {
         "brdfLUT": 0,
         "brdflutMap": 0,
