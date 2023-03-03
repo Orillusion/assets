@@ -462,7 +462,7 @@
       "addressModeV": "clamp-to-edge",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": false
+      "useMipmap": true
     },
     {
       "index": 1,
