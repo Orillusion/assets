@@ -1,8 +1,5 @@
 {
-  "version": {
-    "major": 1,
-    "minor": 0
-  },
+  "version": { "major": 1, "minor": 0 },
   "hierarchy": [
     {
       "index": 0,
@@ -11,48 +8,24 @@
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          }
-        }
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "componentType": "SkyRenderer",
+          "geometry": 0,
+          "exposure": 0.5,
+          "roughness": 0,
+          "envMap": 0
+        },
+        { "enable": true, "componentType": "PostProcessingComponent" }
       ],
       "isScene3D": true,
-      "children": [
-        1,
-        2,
-        3,
-        5
-      ],
-      "skyRenderer": {
-        "enable": true,
-        "componentType": "skyRenderer",
-        "geometry": 0,
-        "exposure": 1,
-        "roughness": 0,
-        "envMap": 0
-      }
+      "envMap": 0,
+      "children": [1, 2, 3, 4, 6]
     },
     {
       "index": 1,
@@ -61,270 +34,160 @@
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              -134.99999966351967,
-              -44.99999949527953,
-              -179.9999997620725
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              59.99999999999999,
-              84.85281374238568,
-              60.00000000000001
-            ]
-          }
-        },
-        {
-          "enable": true,
-          "componentType": "camera3D",
-          "fov": 60,
-          "near": 1,
-          "far": 5000,
-          "isShadowCamera": false,
-          "cameraType": 1,
-          "isMainCamera": true
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, 0, 0] }
         }
       ]
     },
     {
       "index": 2,
-      "name": "myDirectLight",
+      "name": "",
       "renderLayer": 2,
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
           "euler": {
             "type": "v3",
             "numbers": [
-              21,
-              108,
-              10
+              -165.00000310021568, 65.00000307880222, 179.9999988045469
             ]
           },
           "position": {
             "type": "v3",
             "numbers": [
-              0,
-              0,
-              0
+              -77.03749662977212, 22.77607596902181, 35.923174643552684
             ]
           }
         },
         {
           "enable": true,
-          "componentType": "light",
-          "size": 1,
-          "dirFix": 1,
-          "lightData": {
-            "lightType": 2,
-            "radius": 0.5,
-            "intensity": 34.54,
-            "linear": 0,
-            "quadratic": 0.032,
-            "lightColor": {
-              "type": "rgba",
-              "numbers": [
-                1,
-                0.9209234507365888,
-                0.853759283180597,
-                1
-              ]
-            },
-            "innerAngle": 0,
-            "outerAngle": 1,
-            "range": 9007199254740991,
-            "castGI": true,
-            "castShadow": true
-          }
+          "componentType": "Camera3D",
+          "fov": 60,
+          "near": 1,
+          "far": 5000,
+          "isShadowCamera": false,
+          "cameraType": 1
+        },
+        {
+          "enable": true,
+          "componentType": "HoverCameraController",
+          "minDistance": 0.1,
+          "maxDistance": 105.6,
+          "rollSmooth": 15,
+          "dragSmooth": 20,
+          "wheelSmooth": 10,
+          "wheelStep": 0.002,
+          "mouseRightFactor": 0.5,
+          "mouseLeftFactor": 20,
+          "smooth": true,
+          "distance": 88,
+          "roll": -65,
+          "pitch": -15
         }
       ]
     },
     {
       "index": 3,
+      "name": "DirectionLight_5B5113DE9A2C2075",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [20, 160, 0] },
+          "position": { "type": "v3", "numbers": [0, 30, -40] }
+        },
+        {
+          "enable": true,
+          "componentType": "DirectLight",
+          "size": 1,
+          "dirFix": 1,
+          "lightData": {
+            "lightType": 2,
+            "radius": 0.5,
+            "intensity": 20,
+            "linear": 0,
+            "quadratic": 0.032,
+            "lightColor": {
+              "type": "rgba",
+              "numbers": [1, 0.9209234507365888, 0.853759283180597, 1]
+            },
+            "innerAngle": 0,
+            "outerAngle": 1,
+            "range": 9999999,
+            "lightTangent": {
+              "x": 0.11697778105735779,
+              "y": 0.9396926164627075,
+              "z": -0.32139381766319275,
+              "w": 0,
+              "index": 261
+            }
+          },
+          "castGI": true,
+          "castShadow": true
+        }
+      ]
+    },
+    {
+      "index": 4,
       "name": "floor",
       "renderLayer": 2,
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          }
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, -1, 0] }
         },
         {
           "enable": true,
-          "componentType": "meshRenderer",
+          "componentType": "MeshRenderer",
           "geometry": 1,
-          "materials": [
-            0
-          ]
+          "materials": [1]
         }
       ],
-      "children": [
-        4
-      ]
+      "children": [5]
     },
     {
-      "index": 4,
+      "index": 5,
       "name": "box",
       "renderLayer": 2,
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          }
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, 0, 0] }
         },
         {
           "enable": true,
-          "componentType": "meshRenderer",
+          "componentType": "MeshRenderer",
           "geometry": 2,
-          "materials": [
-            1
-          ]
+          "materials": [2]
         }
       ]
     },
     {
-      "index": 5,
+      "index": 6,
       "name": "GLTF_NO_NAME_SCENE",
       "renderLayer": 2,
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              0.15,
-              0.15,
-              0.15
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              -16,
-              0,
-              36
-            ]
-          }
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [0.15, 0.15, 0.15] },
+          "euler": { "type": "v3", "numbers": [20, 125, 0] },
+          "position": { "type": "v3", "numbers": [-16, -5, 36] }
         }
       ],
-      "children": [
-        6
-      ]
-    },
-    {
-      "index": 6,
-      "renderLayer": 2,
-      "components": [
-        {
-          "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          }
-        }
-      ],
-      "children": [
-        7,
-        9
-      ]
+      "children": [7]
     },
     {
       "index": 7,
@@ -332,111 +195,58 @@
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          }
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, 0, 0] }
         }
       ],
-      "children": [
-        8
-      ]
+      "children": [8, 10]
     },
     {
       "index": 8,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, 0, 0] }
+        }
+      ],
+      "children": [9]
+    },
+    {
+      "index": 9,
       "name": "LOD3spShape0",
       "renderLayer": 2,
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          }
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, 0, 0] }
         },
         {
           "enable": true,
-          "componentType": "meshRenderer",
+          "componentType": "MeshRenderer",
           "geometry": 3,
-          "materials": [
-            2
-          ]
+          "materials": [3]
         }
       ]
     },
     {
-      "index": 9,
+      "index": 10,
       "renderLayer": 2,
       "components": [
         {
           "enable": true,
-          "componentType": "transform",
-          "scale": {
-            "type": "v3",
-            "numbers": [
-              1,
-              1,
-              1
-            ]
-          },
-          "euler": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          },
-          "position": {
-            "type": "v3",
-            "numbers": [
-              0,
-              0,
-              0
-            ]
-          }
+          "componentType": "Transform",
+          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "euler": { "type": "v3", "numbers": [0, 0, 0] },
+          "position": { "type": "v3", "numbers": [0, 0, 0] }
         }
       ]
     }
@@ -444,7 +254,7 @@
   "textures": [
     {
       "index": 0,
-      "textureSource": {
+      "asset": {
         "type": "cube-face6",
         "url": [
           "textures/cubemap/skybox_nx.png",
@@ -466,39 +276,8 @@
     },
     {
       "index": 1,
-      "textureSource": {
-        "type": "internal",
-        "name": "BRDFLUT"
-      }
-    },
-    {
-      "index": 2,
-      "textureSource": {
-        "type": "internal",
-        "name": "default-grayTexture"
-      }
-    },
-    {
-      "index": 3,
-      "textureSource": {
-        "type": "internal",
-        "name": "default-normalTexture"
-      }
-    },
-    {
-      "index": 4,
-      "textureSource": {
-        "type": "internal",
-        "name": "default-blackTexture"
-      }
-    },
-    {
-      "index": 5,
-      "name": "0_diffuse",
-      "textureSource": {
-        "type": "net-image",
-        "url": "gltfs/dizuo/0_diffuse.jpg"
-      },
+      "name": "default-whiteTexture",
+      "asset": { "type": "default" },
       "minFilter": "linear",
       "magFilter": "linear",
       "mipmapFilter": "linear",
@@ -509,14 +288,48 @@
       "useMipmap": true
     },
     {
-      "index": 6,
+      "index": 2,
+      "name": "default-normalTexture",
+      "asset": { "type": "default" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 3,
+      "name": "default-blackTexture",
+      "asset": { "type": "default" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 4,
+      "name": "0_diffuse",
+      "asset": { "type": "net-image", "url": "gltfs/dizuo/0_diffuse.jpg" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 5,
       "name": "DuckCM",
-      "textureSource": {
-        "type": "gltf-image",
-        "url": "PBR/Duck/DuckCM.png",
-        "index": 0,
-        "srcGLTF": "PBR/Duck/Duck.gltf"
-      },
+      "asset": { "type": "net-image", "url": "PBR/Duck/DuckCM.png" },
       "minFilter": "linear",
       "magFilter": "linear",
       "mipmapFilter": "linear",
@@ -530,180 +343,72 @@
   "materials": [
     {
       "index": 0,
-      "name": "myMaterial1",
-      "vsShader": "Stand_vert_wgsl",
-      "fsShader": "Stand_frag_wgsl",
-      "className": "LitMaterial",
-      "textures": {
-        "brdfLUT": 1,
-        "brdflutMap": 1,
-        "baseMap": 2,
-        "normalMap": 3,
-        "emissiveMap": 4,
-        "envMap": 0,
-        "prefilterMap": 0
-      },
+      "name": "skyMaterial",
+      "vsShader": "sky_vs_frag_wgsl",
+      "fsShader": "sky_fs_frag_wgsl",
+      "className": "SkyMaterial",
+      "textures": { "baseMap": 0, "envMap": 0, "prefilterMap": 0 },
       "uniforms": {
-        "irradianceData": {
-          "type": "none"
-        },
-        "CameraPos": {
-          "type": "v3",
-          "numbers": [
-            0,
-            0,
-            0
-          ]
-        },
-        "shadowBias": {
-          "type": "number",
-          "value": 0.00035
-        },
-        "transformUV1": {
-          "type": "v4",
-          "numbers": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        "transformUV2": {
-          "type": "v4",
-          "numbers": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        "baseColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "emissiveColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "materialF0": {
-          "type": "v4",
-          "numbers": [
-            0.04,
-            0.04,
-            0.04,
-            1
-          ]
-        },
-        "envIntensity": {
-          "type": "number",
-          "value": 1
-        },
-        "normalScale": {
-          "type": "number",
-          "value": 1
-        },
-        "roughness": {
-          "type": "number",
-          "value": 0.85
-        },
-        "metallic": {
-          "type": "number",
-          "value": 0.1
-        },
-        "ao": {
-          "type": "number",
-          "value": 1
-        },
-        "roughness_min": {
-          "type": "number",
-          "value": 0
-        },
-        "roughness_max": {
-          "type": "number",
-          "value": 1
-        },
-        "metallic_min": {
-          "type": "number",
-          "value": 0
-        },
-        "metallic_max": {
-          "type": "number",
-          "value": 1
-        },
-        "emissiveIntensity": {
-          "type": "number",
-          "value": 0
-        },
-        "alphaCutoff": {
-          "type": "number",
-          "value": 0
-        },
-        "ior": {
-          "type": "number",
-          "value": 1.5
-        },
-        "clearcoatFactor": {
-          "type": "number",
-          "value": 0
-        },
-        "clearcoatRoughnessFactor": {
-          "type": "number",
-          "value": 0
-        },
-        "clearcoatColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "clearcoatWeight": {
-          "type": "number",
-          "value": 0
-        }
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 0,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatWeight": 0,
+        "eyesPos": { "type": "v3", "numbers": [0, 0, 0] },
+        "exposure": 1
       },
       "shaderState": {
         "blendMode": 0,
-        "depthCompare": "less-equal",
+        "depthCompare": "less",
         "depthWriteEnabled": false,
-        "frontFace": "ccw",
+        "frontFace": "cw",
         "cullMode": "back",
         "topology": "triangle-list",
         "depthBias": 10,
-        "useLight": true,
+        "useLight": false,
         "useProbe": false,
-        "acceptGI": true,
-        "acceptShadow": true,
-        "castShadow": true,
-        "receiveEnv": true,
+        "acceptGI": false,
+        "acceptShadow": false,
+        "castShadow": false,
+        "castReflection": false,
+        "receiveEnv": false,
         "renderLayer": 1000,
         "renderOrder": 0,
         "unclippedDepth": false,
         "multisample": 0,
-        "useZ": true
+        "useZ": true,
+        "splitTexture": false
       },
       "defineValue": {
-        "USE_BRDF": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": false,
         "USE_TANGENT": false,
-        "USE_GI": true,
-        "USE_CASTSHADOW": true,
-        "USE_SHADOWMAPING": true,
-        "USE_LIGHT": true,
+        "USE_GI": false,
+        "USE_CASTSHADOW": false,
+        "USE_SHADOWMAPING": false,
+        "USE_LIGHT": false,
         "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
         "USE_WORLDPOS": true,
         "USEGBUFFER": true,
         "USEGI": false
@@ -712,154 +417,47 @@
     },
     {
       "index": 1,
-      "name": "myMaterial2",
-      "vsShader": "Stand_vert_wgsl",
-      "fsShader": "Stand_frag_wgsl",
+      "name": "myMaterial1",
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
       "className": "LitMaterial",
       "textures": {
-        "brdfLUT": 1,
-        "brdflutMap": 1,
-        "baseMap": 5,
-        "normalMap": 3,
-        "emissiveMap": 4,
+        "baseMap": 1,
+        "normalMap": 2,
+        "emissiveMap": 3,
         "envMap": 0,
-        "prefilterMap": 0
+        "prefilterMap": 0,
+        "irradianceMap": 3,
+        "irradianceDepthMap": 3
       },
       "uniforms": {
-        "irradianceData": {
-          "type": "none"
-        },
-        "CameraPos": {
-          "type": "v3",
-          "numbers": [
-            0,
-            0,
-            0
-          ]
-        },
-        "shadowBias": {
-          "type": "number",
-          "value": 0.00035
-        },
-        "transformUV1": {
-          "type": "v4",
-          "numbers": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        "transformUV2": {
-          "type": "v4",
-          "numbers": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        "baseColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "emissiveColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "materialF0": {
-          "type": "v4",
-          "numbers": [
-            0.04,
-            0.04,
-            0.04,
-            1
-          ]
-        },
-        "envIntensity": {
-          "type": "number",
-          "value": 1
-        },
-        "normalScale": {
-          "type": "number",
-          "value": 1
-        },
-        "roughness": {
-          "type": "number",
-          "value": 0.85
-        },
-        "metallic": {
-          "type": "number",
-          "value": 0.1
-        },
-        "ao": {
-          "type": "number",
-          "value": 1
-        },
-        "roughness_min": {
-          "type": "number",
-          "value": 0
-        },
-        "roughness_max": {
-          "type": "number",
-          "value": 1
-        },
-        "metallic_min": {
-          "type": "number",
-          "value": 0
-        },
-        "metallic_max": {
-          "type": "number",
-          "value": 1
-        },
-        "emissiveIntensity": {
-          "type": "number",
-          "value": 0
-        },
-        "alphaCutoff": {
-          "type": "number",
-          "value": 0
-        },
-        "ior": {
-          "type": "number",
-          "value": 1.5
-        },
-        "clearcoatFactor": {
-          "type": "number",
-          "value": 0
-        },
-        "clearcoatRoughnessFactor": {
-          "type": "number",
-          "value": 0
-        },
-        "clearcoatColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "clearcoatWeight": {
-          "type": "number",
-          "value": 0
-        }
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.85,
+        "metallic": 0.1,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 0,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
       },
       "shaderState": {
         "blendMode": 0,
-        "depthCompare": "less-equal",
-        "depthWriteEnabled": false,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
         "frontFace": "ccw",
         "cullMode": "back",
         "topology": "triangle-list",
@@ -869,12 +467,14 @@
         "acceptGI": true,
         "acceptShadow": true,
         "castShadow": true,
+        "castReflection": false,
         "receiveEnv": true,
         "renderLayer": 1000,
         "renderOrder": 0,
         "unclippedDepth": false,
         "multisample": 0,
-        "useZ": true
+        "useZ": true,
+        "splitTexture": false
       },
       "defineValue": {
         "USE_BRDF": true,
@@ -886,6 +486,10 @@
         "USE_SHADOWMAPING": true,
         "USE_LIGHT": true,
         "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
         "USE_WORLDPOS": true,
         "USEGBUFFER": true,
         "USEGI": false
@@ -894,154 +498,47 @@
     },
     {
       "index": 2,
-      "name": "blinn3-fx",
-      "vsShader": "Stand_vert_wgsl",
-      "fsShader": "Stand_frag_wgsl",
+      "name": "myMaterial2",
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
       "className": "LitMaterial",
       "textures": {
-        "brdfLUT": 1,
-        "brdflutMap": 1,
-        "baseMap": 6,
-        "normalMap": 3,
-        "emissiveMap": 4,
+        "baseMap": 4,
+        "normalMap": 2,
+        "emissiveMap": 3,
         "envMap": 0,
-        "prefilterMap": 0
+        "prefilterMap": 0,
+        "irradianceMap": 3,
+        "irradianceDepthMap": 3
       },
       "uniforms": {
-        "irradianceData": {
-          "type": "none"
-        },
-        "CameraPos": {
-          "type": "v3",
-          "numbers": [
-            0,
-            0,
-            0
-          ]
-        },
-        "shadowBias": {
-          "type": "number",
-          "value": 0.00035
-        },
-        "transformUV1": {
-          "type": "v4",
-          "numbers": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        "transformUV2": {
-          "type": "v4",
-          "numbers": [
-            0,
-            0,
-            1,
-            1
-          ]
-        },
-        "baseColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "emissiveColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "materialF0": {
-          "type": "v4",
-          "numbers": [
-            0.04,
-            0.04,
-            0.04,
-            1
-          ]
-        },
-        "envIntensity": {
-          "type": "number",
-          "value": 1
-        },
-        "normalScale": {
-          "type": "number",
-          "value": 1
-        },
-        "roughness": {
-          "type": "number",
-          "value": 0.5
-        },
-        "metallic": {
-          "type": "number",
-          "value": 0
-        },
-        "ao": {
-          "type": "number",
-          "value": 1
-        },
-        "roughness_min": {
-          "type": "number",
-          "value": 0
-        },
-        "roughness_max": {
-          "type": "number",
-          "value": 1
-        },
-        "metallic_min": {
-          "type": "number",
-          "value": 0
-        },
-        "metallic_max": {
-          "type": "number",
-          "value": 1
-        },
-        "emissiveIntensity": {
-          "type": "number",
-          "value": 1
-        },
-        "alphaCutoff": {
-          "type": "number",
-          "value": 0
-        },
-        "ior": {
-          "type": "number",
-          "value": 1.5
-        },
-        "clearcoatFactor": {
-          "type": "number",
-          "value": 0
-        },
-        "clearcoatRoughnessFactor": {
-          "type": "number",
-          "value": 0
-        },
-        "clearcoatColor": {
-          "type": "rgba",
-          "numbers": [
-            1,
-            1,
-            1,
-            1
-          ]
-        },
-        "clearcoatWeight": {
-          "type": "number",
-          "value": 0
-        }
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.85,
+        "metallic": 0.1,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 0,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
       },
       "shaderState": {
         "blendMode": 0,
-        "depthCompare": "less-equal",
-        "depthWriteEnabled": false,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
         "frontFace": "ccw",
         "cullMode": "back",
         "topology": "triangle-list",
@@ -1051,12 +548,14 @@
         "acceptGI": true,
         "acceptShadow": true,
         "castShadow": true,
+        "castReflection": false,
         "receiveEnv": true,
         "renderLayer": 1000,
         "renderOrder": 0,
         "unclippedDepth": false,
         "multisample": 0,
-        "useZ": true
+        "useZ": true,
+        "splitTexture": false
       },
       "defineValue": {
         "USE_BRDF": true,
@@ -1067,7 +566,95 @@
         "USE_CASTSHADOW": true,
         "USE_SHADOWMAPING": true,
         "USE_LIGHT": true,
-        "USE_VERTXCOLOR": false
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 3,
+      "name": "blinn3-fx",
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 5,
+        "normalMap": 2,
+        "emissiveMap": 3,
+        "envMap": 0,
+        "prefilterMap": 0,
+        "irradianceMap": 3,
+        "irradianceDepthMap": 3
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.15,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
       },
       "constValues": {}
     }
@@ -1075,65 +662,42 @@
   "geometries": [
     {
       "index": 0,
-      "name": "default-sphereGeometry",
-      "data": {
-        "radius": 2000,
-        "widthSegments": 20,
-        "heightSegments": 20
-      },
-      "geometrySource": {
-        "type": "primitive-sphere"
-      }
+      "className": "SphereGeometry",
+      "radius": 1000000,
+      "widthSegments": 20,
+      "heightSegments": 20
     },
     {
       "index": 1,
-      "name": "default-planeGeometry",
-      "data": {
-        "width": 500,
-        "height": 500,
-        "segmentW": 4,
-        "segmentH": 1,
-        "up": {
-          "type": "v3",
-          "numbers": [
-            0,
-            1,
-            0
-          ]
-        }
-      },
-      "geometrySource": {
-        "type": "primitive-plane"
-      }
+      "className": "PlaneGeometry",
+      "width": 500,
+      "height": 500,
+      "segmentW": 4,
+      "segmentH": 1,
+      "up": { "type": "v3", "numbers": [0, 1, 0] }
     },
     {
       "index": 2,
-      "name": "boxGeometry11F50D09F4335007",
-      "data": {
-        "width": 100,
-        "height": 20,
-        "depth": 50
-      },
-      "geometrySource": {
-        "type": "primitive-box"
-      }
+      "className": "BoxGeometry",
+      "width": 40,
+      "height": 30,
+      "depth": 50
     },
     {
       "index": 3,
       "name": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
-      "geometrySource": {
-        "type": "gltf-geometry",
-        "key": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
-        "srcGLTF": "PBR/Duck/Duck.gltf"
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
+        "file": "PBR/Duck/Duck.gltf"
       }
     }
   ],
   "engineSetting": {
-    "occlusionQuerySetting": {
-      "enable": true,
-      "debug": false
-    },
-    "renderSetting": {
+    "occlusionQuery": { "enable": true, "debug": false },
+    "render": {
+      "debug": false,
       "renderPassState": 4,
       "renderState_left": 5,
       "renderState_right": 5,
@@ -1148,9 +712,11 @@
       "drawOpMax": 9007199254740991,
       "drawTrMin": 0,
       "drawTrMax": 9007199254740991,
-      "zPrePass": true,
+      "zPrePass": false,
+      "gi": false,
       "postProcessing": {
         "globalFog": {
+          "debug": false,
           "enable": false,
           "fogType": 0,
           "height": 100,
@@ -1191,10 +757,10 @@
           "debug": true
         },
         "gtao": {
-          "enable": false,
+          "enable": true,
           "darkFactor": 1,
-          "maxDistance": 5,
-          "maxPixel": 50,
+          "maxDistance": 25,
+          "maxPixel": 40,
           "rayMarchSegment": 6,
           "multiBounce": false,
           "usePosFloat32": true,
@@ -1217,13 +783,12 @@
           "enable": true,
           "blurX": 4,
           "blurY": 4,
-          "intensity": 0.5,
-          "brightness": 1.25,
+          "strength": 0.25,
+          "radius": 1.3,
+          "luminosityThreshold": 0.98,
           "debug": false
         },
-        "fxaa": {
-          "enable": true
-        },
+        "fxaa": { "enable": true },
         "depthOfView": {
           "enable": false,
           "iterationCount": 3,
@@ -1233,24 +798,24 @@
         }
       }
     },
-    "renderJobSetting": {
-      "type": "Forward"
-    },
-    "shadowSetting": {
+    "shadow": {
       "enable": true,
-      "type": "PCF",
-      "shadowBias": 0.002,
+      "type": "HARD",
+      "shadowBias": 0.0005,
+      "pointShadowBias": 0.002,
       "shadowQuality": 2.5,
       "shadowBound": 100,
-      "shadowSize": 2048,
+      "shadowSize": 1024,
+      "pointShadowSize": 1024,
+      "shadowSoft": 0.005,
       "shadowNear": 1,
-      "shadowFar": 3000,
+      "shadowFar": 2000,
       "needUpdate": true,
       "autoUpdate": true,
-      "updateFrameRate": 5,
+      "updateFrameRate": 2,
       "debug": false
     },
-    "globalIlluminationSetting": {
+    "gi": {
       "enable": false,
       "offsetX": 0,
       "offsetY": 0,
@@ -1263,32 +828,32 @@
       "probeSourceTextureSize": 2048,
       "octRTMaxSize": 2048,
       "octRTSideSize": 16,
-      "maxDistance": 120,
+      "maxDistance": 110.72,
       "normalBias": 0.25,
-      "depthSharpness": 50,
+      "depthSharpness": 1,
       "hysteresis": 0.98,
+      "lerpHysteresis": 0.01,
       "irradianceChebyshevBias": 0.01,
-      "irradianceVarianceBias": 2.316,
+      "rayNumber": 144,
       "irradianceDistanceBias": 32,
       "indirectIntensity": 1,
-      "bounceIntensity": 0.5,
+      "ddgiGamma": 2.2,
+      "bounceIntensity": 0.025,
       "probeRoughness": 1,
       "realTimeGI": false,
       "debug": false,
       "autoRenderProbe": false
     },
-    "skySetting": {
+    "sky": {
       "type": "HDRSKY",
       "sky": null,
-      "skyExposure": 1,
-      "defaultFar": 2000,
+      "skyExposure": 0.5,
+      "defaultFar": 1000000,
       "defaultNear": 1
     },
-    "lightSetting": {
-      "maxLight": 1024
-    }
+    "light": { "maxLight": 4096 },
+    "material": { "materialChannelDebug": false, "materialDebug": false }
   },
-  "gltfList": [
-    "PBR/Duck/Duck.gltf"
-  ]
+  "view3DList": [{ "x": 0, "y": 0, "width": 0, "height": 0, "enable": true }],
+  "gltfList": ["PBR/Duck/Duck.gltf"]
 }
