@@ -1,0 +1,3039 @@
+{
+  "version": { "major": 1, "minor": 0 },
+  "hierarchy": [
+    {
+      "index": 0,
+      "name": "",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "AtmosphericComponent",
+          "data": {
+            "sunRadius": 500,
+            "sunRadiance": 11,
+            "mieG": 0.76,
+            "mieHeight": 1200,
+            "eyePos": 1500,
+            "sunX": 0.71,
+            "sunY": 0.56,
+            "sunBrightness": 1,
+            "displaySun": true,
+            "defaultTextureCubeSize": 512,
+            "defaultTexture2DSize": 1024,
+            "skyColor": { "r": 1, "g": 1, "b": 1, "a": 1 }
+          }
+        }
+      ],
+      "isScene3D": true,
+      "envMap": -1,
+      "children": [1, 2, 3, 4]
+    },
+    {
+      "index": 1,
+      "name": "",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [-165.00000310021568, 65.00000307880222, 179.9999988045469]
+          },
+          "position": {
+            "type": "v3",
+            "data": [-87.54260980655924, 25.881904510252056, 40.82178936767351]
+          }
+        },
+        {
+          "enable": true,
+          "className": "Camera3D",
+          "fov": 60,
+          "near": 1,
+          "far": 5000,
+          "isShadowCamera": false,
+          "cameraType": 1
+        },
+        {
+          "enable": true,
+          "className": "HoverCameraController",
+          "minDistance": 0.1,
+          "maxDistance": 120,
+          "rollSmooth": 15,
+          "dragSmooth": 20,
+          "wheelSmooth": 10,
+          "wheelStep": 0.002,
+          "mouseRightFactor": 0.5,
+          "mouseLeftFactor": 20,
+          "smooth": true,
+          "distance": 100,
+          "roll": -65,
+          "pitch": -15
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "DirectionLight_239A94CCD5C3B355",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [20, 160, 0] },
+          "position": { "type": "v3", "data": [0, 30, -40] }
+        },
+        {
+          "enable": true,
+          "className": "DirectLight",
+          "size": 1,
+          "dirFix": 1,
+          "lightData": {
+            "lightType": 2,
+            "radius": 0.5,
+            "intensity": 20,
+            "linear": 0,
+            "quadratic": 0.032,
+            "lightColor": {
+              "type": "rgba",
+              "data": [1, 0.9209234507365888, 0.853759283180597, 1]
+            },
+            "innerAngle": 0,
+            "outerAngle": 1,
+            "range": 9999999,
+            "lightTangent": {
+              "x": 0.11697778105735779,
+              "y": 0.9396926164627075,
+              "z": -0.32139381766319275,
+              "w": 0,
+              "index": 287
+            }
+          },
+          "castGI": true,
+          "castShadow": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Scene",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [100, 100, 100] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, -50, 0] }
+        },
+        { "enable": true, "className": "MorphTargetBlender" }
+      ],
+      "children": [5, 6]
+    },
+    {
+      "index": 5,
+      "name": "nanhai_gp",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [
+              0.009999999776482582, 0.009999999776482582, 0.009999999776482582
+            ]
+          },
+          "euler": { "type": "v3", "data": [90.00000769819569, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Armature",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [
+              0.009999999776482582, 0.009999999776482582, 0.009999999776482582
+            ]
+          },
+          "euler": { "type": "v3", "data": [90.00000769819569, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ],
+      "children": [7, 9, 18, 20]
+    },
+    {
+      "index": 7,
+      "name": "hair_geo",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ],
+      "children": [8]
+    },
+    {
+      "index": 8,
+      "name": "网格0",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 1,
+          "materials": [1]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "head_geo",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ],
+      "children": [10, 11, 12, 13, 14, 15, 16, 17]
+    },
+    {
+      "index": 10,
+      "name": "网格.0050",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 2,
+          "materials": [2]
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "网格.0051",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 3,
+          "materials": [3]
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "网格.0052",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 4,
+          "materials": [4]
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "网格.0053",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 5,
+          "materials": [5]
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "网格.0054",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 6,
+          "materials": [6]
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "网格.0055",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 7,
+          "materials": [7]
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "网格.0056",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 8,
+          "materials": [8]
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "网格.0057",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 9,
+          "materials": [9]
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "yanjing_geo",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ],
+      "children": [19]
+    },
+    {
+      "index": 19,
+      "name": "网格.0010",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 10,
+          "materials": [10]
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "name": "Hips",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [-90.00000769819438, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ],
+      "children": [21]
+    },
+    {
+      "index": 21,
+      "name": "Spine",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              -4.930380657631324e-32, 13.0083646774292, 0.11214975267648697
+            ]
+          }
+        }
+      ],
+      "children": [22, 25, 50]
+    },
+    {
+      "index": 22,
+      "name": "Neck",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              4.649807269226742e-15, 26.238876342773438, -3.3250293731689453
+            ]
+          }
+        }
+      ],
+      "children": [23]
+    },
+    {
+      "index": 23,
+      "name": "Head",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              -4.819272303950963e-15, 8.336799621582031, 1.3784593343734741
+            ]
+          }
+        }
+      ],
+      "children": [24]
+    },
+    {
+      "index": 24,
+      "name": "HeadTop_End",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.849000926055621e-14, 17.161823272705078, 0.9649215340614319
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "LeftShoulder",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [5.965289115905762, 20.232669830322266, -1.5778796672821045]
+          }
+        }
+      ],
+      "children": [26]
+    },
+    {
+      "index": 26,
+      "name": "LeftArm",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              5.264950275421143, 0.005973108112812042, -2.8791120052337646
+            ]
+          }
+        }
+      ],
+      "children": [27]
+    },
+    {
+      "index": 27,
+      "name": "LeftForeArm",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [16.438016891479492, -0.113034188747406, -1.151645302772522]
+          }
+        }
+      ],
+      "children": [28]
+    },
+    {
+      "index": 28,
+      "name": "LeftForeArm1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999998807907104, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              1.722742124182932e-12, -17.389074086151822, -3.676063929975529e-13
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [8.088916778564453, 0.3378749191761017, 2.6744015216827393]
+          }
+        }
+      ],
+      "children": [29]
+    },
+    {
+      "index": 29,
+      "name": "LeftHand",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -4.0506309354987294e-13, -1.203166778917324,
+              -1.993248413870158e-13
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [8.95766830444336, 0.33727264404296875, 0.1519487500190735]
+          }
+        }
+      ],
+      "children": [30, 34, 38, 42, 46]
+    },
+    {
+      "index": 30,
+      "name": "LeftHandPinky1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [0.9999999403953552, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -2.1357521489062083, 12.029514409392696, -10.144942996775299
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              5.0847649574279785, -0.11983127146959305, -2.9199113845825195
+            ]
+          }
+        }
+      ],
+      "children": [31]
+    },
+    {
+      "index": 31,
+      "name": "LeftHandPinky2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999998807907104, 1, 0.9999998211860657]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.13611547956449027, 0.778569556180504, 0.002915459308942706
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              2.712791681289673, 0.0000024084001779556274,
+              0.000001680763944023056
+            ]
+          }
+        }
+      ],
+      "children": [32]
+    },
+    {
+      "index": 32,
+      "name": "LeftHandPinky3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999998807907104, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.015356564083209423, 0.08789383533635362, 0.0006200308070868526
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.490761399269104, -4.0046870708465576e-8, 9.303535080107395e-7
+            ]
+          }
+        }
+      ],
+      "children": [33]
+    },
+    {
+      "index": 33,
+      "name": "LeftHandPinky4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999998807907104, 1]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.000004950313736942356, 5.497759875697654, 9.915412625565283
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.3477269411087036, -0.0000041211023926734924,
+              -9.299819794250652e-7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "LeftHandRing1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [0.9999999403953552, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -1.4729854289475461, 7.840277313485018, -10.675226925421004
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              6.503890514373779, 0.39694225788116455, -1.4662017822265625
+            ]
+          }
+        }
+      ],
+      "children": [35]
+    },
+    {
+      "index": 35,
+      "name": "LeftHandRing2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999999403953552, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.13388602419075588, 0.7173902858483096, 0.002631484184107824
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              3.0200083255767822, 0.000002175569534301758,
+              -1.1307929526083171e-7
+            ]
+          }
+        }
+      ],
+      "children": [36]
+    },
+    {
+      "index": 36,
+      "name": "LeftHandRing3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.007742616014521673, -0.04145834483694964,
+              -0.00021166897934025237
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7696586847305298, 0.000003255903720855713, -7.273711162270047e-7
+            ]
+          }
+        }
+      ],
+      "children": [37]
+    },
+    {
+      "index": 37,
+      "name": "LeftHandRing4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [0.9999999403953552, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.000011657370039504826, 9.928045801356234, 10.571019773405455
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7197325229644775, -0.0000020675361156463623,
+              -0.0000014882662071613595
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "LeftHandMiddle1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1.0000001192092896, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [-0.5468785891131017, 3.413303717422883, -9.108219214255099]
+          },
+          "position": {
+            "type": "v3",
+            "data": [6.711859703063965, 0.537075400352478, 0.2231428027153015]
+          }
+        }
+      ],
+      "children": [39]
+    },
+    {
+      "index": 39,
+      "name": "LeftHandMiddle2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999999403953552, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.09888120805374279, 0.6179349396347927, 0.001497512297706164
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              3.561931848526001, -0.000011831521987915039, -4.121930032852106e-7
+            ]
+          }
+        }
+      ],
+      "children": [40]
+    },
+    {
+      "index": 40,
+      "name": "LeftHandMiddle3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 1, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.007524489674695659, -0.04700334130642518,
+              -0.00022842937910549381
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              2.189729690551758, 0.000012040138244628906,
+              -0.0000015102220913831843
+            ]
+          }
+        }
+      ],
+      "children": [41]
+    },
+    {
+      "index": 41,
+      "name": "LeftHandMiddle4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999998807907104, 0.9999998807907104, 1]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.0000020736148114676875, 14.557261694078754, 9.090116933550965
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7197307348251343, 0.000004738569259643555,
+              0.0000010976541489071678
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "name": "LeftHandIndex1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 1, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.08727015724261604, 0.5557618325392399, -8.92436744299298
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [6.572906017303467, 0.15799017250537872, 2.1559031009674072]
+          }
+        }
+      ],
+      "children": [43]
+    },
+    {
+      "index": 43,
+      "name": "LeftHandIndex2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999999403953552, 1.0000001192092896]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.10279132569621381, 0.6545689059721111, -0.0005699874583681005
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              3.264575958251953, 0.0000024586915969848633,
+              -0.000002464636054355651
+            ]
+          }
+        }
+      ],
+      "children": [44]
+    },
+    {
+      "index": 44,
+      "name": "LeftHandIndex3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 1, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.004765056564602819, -0.030337019264983407,
+              -0.000026821355089410213
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.695177674293518, -0.000003516674041748047, 7.953794920467772e-7
+            ]
+          }
+        }
+      ],
+      "children": [45]
+    },
+    {
+      "index": 45,
+      "name": "LeftHandIndex4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 1, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.0000017839269293992345, 17.397787152346723, 8.923948067652955
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7197351455688477, 0.0000060498714447021484,
+              0.000001024552148010116
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "name": "LeftHandThumb1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [1, 0.9999998807907104, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [113.69352114618086, -50.42432594280846, 121.90315291311781]
+          },
+          "position": {
+            "type": "v3",
+            "data": [1.7465323209762573, -0.8524127006530762, 2.329364776611328]
+          }
+        }
+      ],
+      "children": [47]
+    },
+    {
+      "index": 47,
+      "name": "LeftHandThumb2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [1, 0.9999998211860657, 0.9999998211860657]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [1.517404709306359, -13.558009408439936, 6.289761837014744]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              -0.0000026226043701171875, 2.9960193634033203,
+              -0.000002771615982055664
+            ]
+          }
+        }
+      ],
+      "children": [48]
+    },
+    {
+      "index": 48,
+      "name": "LeftHandThumb3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1.0000001192092896] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.004408914010325702, 0.001153772315613971, -0.002671075248918167
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              0.000004291534423828125, 2.1801295280456543,
+              0.0000013113021850585938
+            ]
+          }
+        }
+      ],
+      "children": [49]
+    },
+    {
+      "index": 49,
+      "name": "LeftHandThumb4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 1.000000238418579, 1.0000001192092896]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [69.83942855405984, -15.632046177391942, 143.7243284148521]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              0.000001430511474609375, 2.2082018852233887,
+              -0.0000073909759521484375
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 50,
+      "name": "RightShoulder",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              -5.965290069580078, 20.232635498046875, -1.5778796672821045
+            ]
+          }
+        }
+      ],
+      "children": [51]
+    },
+    {
+      "index": 51,
+      "name": "RightArm",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              -5.264919757843018, 0.006003625690937042, -2.8791098594665527
+            ]
+          }
+        }
+      ],
+      "children": [52]
+    },
+    {
+      "index": 52,
+      "name": "RightForeArm",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [8.142219984546603e-13, 0, 0] },
+          "position": {
+            "type": "v3",
+            "data": [
+              -16.438091278076172, -0.11299985647201538, -1.151650071144104
+            ]
+          }
+        }
+      ],
+      "children": [53]
+    },
+    {
+      "index": 53,
+      "name": "RightForeArm1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              9.104010419137582e-13, 20.731030380977014, 3.7688935397376047e-13
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [-8.088899612426758, 0.3378024399280548, 2.674410104751587]
+          }
+        }
+      ],
+      "children": [54]
+    },
+    {
+      "index": 54,
+      "name": "RightHand",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              4.0537900348307885e-13, -2.3256931047170033, 9.359118647402588e-14
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              -8.951225280761719, 0.3372955322265625, -0.37047240138053894
+            ]
+          }
+        }
+      ],
+      "children": [55, 59, 63, 67, 71]
+    },
+    {
+      "index": 55,
+      "name": "RightHandThumb1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999998211860657, 0.9999999403953552, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [61.669241095982024, -49.41633212823053, 64.35013391336871]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              -1.7389203310012817, -0.852393627166748, 2.3350446224212646
+            ]
+          }
+        }
+      ],
+      "children": [56]
+    },
+    {
+      "index": 56,
+      "name": "RightHandThumb2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -1.9613682012473967, -3.3041077761284634, 5.639962806583051
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              0.05215883255004883, 2.995563268661499, -0.0004674196243286133
+            ]
+          }
+        }
+      ],
+      "children": [57]
+    },
+    {
+      "index": 57,
+      "name": "RightHandThumb3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [1, 0.9999999403953552, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.00789289127737137, -0.003776951209325477, 0.0010165842680477702
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              9.5367431640625e-7, 2.180171012878418, -7.748603820800781e-7
+            ]
+          }
+        }
+      ],
+      "children": [58]
+    },
+    {
+      "index": 58,
+      "name": "RightHandThumb4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [1, 0.9999999403953552, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.000028996410501649296, -50.9327350710121, -115.30644580375237
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [0, 2.2081546783447266, 7.152557373046875e-7]
+          }
+        }
+      ]
+    },
+    {
+      "index": 59,
+      "name": "RightHandIndex1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999997615814209, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [-179.941734941423, 0.37106692068445535, -171.0760878165055]
+          },
+          "position": {
+            "type": "v3",
+            "data": [-6.565837860107422, 0.1580016165971756, 2.17732834815979]
+          }
+        }
+      ],
+      "children": [60]
+    },
+    {
+      "index": 60,
+      "name": "RightHandIndex2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [0.9999998807907104, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.10281486291432104, -0.6545679892865987, -0.0022302065825663695
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              3.264573812484741, 0.0000016242265701293945, -7.210628609755076e-7
+            ]
+          }
+        }
+      ],
+      "children": [61]
+    },
+    {
+      "index": 61,
+      "name": "RightHandIndex3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.004725105049904037, 0.03015692727666493, 0.003714913282973937
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.6951707601547241, 0.000007987022399902344, -7.548284770564351e-7
+            ]
+          }
+        }
+      ],
+      "children": [62]
+    },
+    {
+      "index": 62,
+      "name": "RightHandIndex4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999998211860657, 0.9999998211860657, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -179.99998030967578, 17.39766463063302, -171.07834670871802
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7197320461273193, -0.000005751848220825195,
+              -0.0000025025015020219143
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 63,
+      "name": "RightHandMiddle1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 1, 0.9999998807907104]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [-179.48274151386505, 3.228487531549528, -170.8925585234446]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              -6.711160659790039, 0.5371021032333374, 0.24500983953475952
+            ]
+          }
+        }
+      ],
+      "children": [64]
+    },
+    {
+      "index": 64,
+      "name": "RightHandMiddle2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [1, 0.9999999403953552, 1.0000001192092896]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.09895969443986051, -0.6184721233248264, 0.0036109789089400464
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              3.561866521835327, 0.000004887580871582031,
+              -0.0000018393593563814647
+            ]
+          }
+        }
+      ],
+      "children": [65]
+    },
+    {
+      "index": 65,
+      "name": "RightHandMiddle3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999998807907104, 0.9999999403953552, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.007644507771848446, 0.04770788351851051, -0.0015956047972130066
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              2.1897501945495605, 0.0000015497207641601562,
+              -0.0000026506388621783117
+            ]
+          }
+        }
+      ],
+      "children": [66]
+    },
+    {
+      "index": 66,
+      "name": "RightHandMiddle4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999998211860657, 1]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -179.9999956225444, 14.557700725528917, -170.90969055151115
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7197184562683105, 0.000011265277862548828,
+              0.0000028412064239091706
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 67,
+      "name": "RightHandRing1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999998807907104, 1.000000238418579, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [-178.5619490041984, 7.656617176533878, -169.32951336432856]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              -6.508706092834473, 0.39700329303741455, -1.4450007677078247
+            ]
+          }
+        }
+      ],
+      "children": [68]
+    },
+    {
+      "index": 68,
+      "name": "RightHandRing2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.13392283252417259, -0.7173806427041384, 0.0008177625455794242
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              3.019986629486084, 0.000004723668098449707, 5.827196218888275e-7
+            ]
+          }
+        }
+      ],
+      "children": [69]
+    },
+    {
+      "index": 69,
+      "name": "RightHandRing3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999998807907104, 0.9999999403953552, 1]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -0.0077934250113713965, 0.0416669913575325, 0.001146079029382048
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7696857452392578, 0.0000030994415283203125, 9.222439985023811e-7
+            ]
+          }
+        }
+      ],
+      "children": [70]
+    },
+    {
+      "index": 70,
+      "name": "RightHandRing4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1.0000003576278687, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [179.9999940941917, 9.928249425836212, -169.42855321967053]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.7197171449661255, 0.000004131346940994263, 9.583454811945558e-7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 71,
+      "name": "RightHandPinky1",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [1, 0.9999996423721313, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              -177.89761997025235, 11.845390360745446, -169.86065276455892
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              -5.094306945800781, -0.1197931244969368, -2.9033279418945312
+            ]
+          }
+        }
+      ],
+      "children": [72]
+    },
+    {
+      "index": 72,
+      "name": "RightHandPinky2",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [0.9999999403953552, 0.9999998807907104, 0.9999999403953552]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.13611287005041206, -0.7786174146860908, 0.004793562250509785
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              2.712813138961792, 0.000004809349775314331, -9.563473213347606e-8
+            ]
+          }
+        }
+      ],
+      "children": [73]
+    },
+    {
+      "index": 73,
+      "name": "RightHandPinky3",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 0.9999999403953552, 1] },
+          "euler": {
+            "type": "v3",
+            "data": [
+              0.015376988037855137, -0.08796449825051682, 0.003052425249261446
+            ]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.4907492399215698, 0.000005234032869338989, 6.947134352230933e-7
+            ]
+          }
+        }
+      ],
+      "children": [74]
+    },
+    {
+      "index": 74,
+      "name": "RightHandPinky4",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": {
+            "type": "v3",
+            "data": [1.0000001192092896, 1.0000001192092896, 1.0000001192092896]
+          },
+          "euler": {
+            "type": "v3",
+            "data": [-179.99999476428914, 5.49772557304468, -170.08756056988435]
+          },
+          "position": {
+            "type": "v3",
+            "data": [
+              1.347719669342041, 0.0000026905909180641174, -5.761864940723171e-7
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "name": "default-whiteTexture",
+      "asset": { "type": "default" }
+    },
+    {
+      "index": 1,
+      "name": "hair_Normal_1",
+      "asset": { "type": "net-image", "url": "nanhai/hair_Normal_1.png" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 2,
+      "name": "default-blackTexture",
+      "asset": { "type": "default" }
+    },
+    {
+      "index": 3,
+      "name": "ya_BaseColor",
+      "asset": { "type": "net-image", "url": "nanhai/ya_BaseColor.png" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 4,
+      "name": "default-normalTexture",
+      "asset": { "type": "default" }
+    },
+    {
+      "index": 5,
+      "name": "body_BaseColor_1001",
+      "asset": { "type": "net-image", "url": "nanhai/body_BaseColor_1001.png" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    },
+    {
+      "index": 6,
+      "name": "body_BaseColor_1002",
+      "asset": { "type": "net-image", "url": "nanhai/body_BaseColor_1002.png" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": "skyMaterial",
+      "vsShader": "sky_vs_frag_wgsl",
+      "fsShader": "sky_fs_frag_wgsl",
+      "className": "SkyMaterial",
+      "textures": {},
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 0,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0,
+        "eyesPos": { "type": "v3", "data": [0, 0, 0] },
+        "exposure": 1
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": false,
+        "frontFace": "cw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": false,
+        "useProbe": false,
+        "acceptGI": false,
+        "acceptShadow": false,
+        "castShadow": false,
+        "castReflection": false,
+        "receiveEnv": false,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": false,
+        "USE_CASTSHADOW": false,
+        "USE_SHADOWMAPING": false,
+        "USE_LIGHT": false,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 1,
+      "name": "hair_MT",
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 1,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": {
+          "type": "rgba",
+          "data": [
+            0.02352941408753395, 0.011764707043766975, 0.011764707043766975, 1
+          ]
+        },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "none",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 2,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 3,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 3,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 5,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 4,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 6,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 5,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [0, 0, 0, 0] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 6,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [0, 0, 0, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 7,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": {
+          "type": "rgba",
+          "data": [0.02199999988079071, 0.005431067664176226, 0, 1]
+        },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 8,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 9,
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": {
+          "type": "rgba",
+          "data": [
+            0.02352941408753395, 0.011764707043766975, 0.011764707043766975, 1
+          ]
+        },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_ALPHACUT": false,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": true,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    },
+    {
+      "index": 10,
+      "name": "glass_MT",
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 4,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [0, 0, 0, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.5527864098548889,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "none",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    }
+  ],
+  "geometries": [
+    {
+      "index": 0,
+      "className": "SphereGeometry",
+      "radius": 1000000,
+      "widthSegments": 20,
+      "heightSegments": 20
+    },
+    {
+      "index": 1,
+      "name": "网格POSITIONNORMALTEXCOORD_0indices:3material:0",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格POSITIONNORMALTEXCOORD_0indices:3material:0",
+        "file": "nanhai/nanhai.gltf"
+      }
+    },
+    {
+      "index": 2,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:7material:1",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:7material:1",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 3,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:115material:2",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:115material:2",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 4,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:223material:3",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:223material:3",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 5,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:331material:4",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:331material:4",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 6,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:439material:5",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:439material:5",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 7,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:547material:6",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:547material:6",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 8,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:655material:7",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:655material:7",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 9,
+      "name": "网格.005POSITIONNORMALTEXCOORD_0indices:763material:8",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.005POSITIONNORMALTEXCOORD_0indices:763material:8",
+        "file": "nanhai/nanhai.gltf"
+      },
+      "morphTargetsRelative": true
+    },
+    {
+      "index": 10,
+      "name": "网格.001POSITIONNORMALTEXCOORD_0indices:871material:9",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "网格.001POSITIONNORMALTEXCOORD_0indices:871material:9",
+        "file": "nanhai/nanhai.gltf"
+      }
+    }
+  ],
+  "engineSetting": {
+    "occlusionQuery": { "enable": true, "debug": false },
+    "render": {
+      "debug": false,
+      "renderPassState": 4,
+      "renderState_left": 5,
+      "renderState_right": 5,
+      "renderState_split": 0.5,
+      "quadScale": 1,
+      "hdrExposure": 1.5,
+      "debugQuad": -1,
+      "maxPointLight": 1000,
+      "maxDirectLight": 4,
+      "maxSportLight": 1000,
+      "drawOpMin": 0,
+      "drawOpMax": 9007199254740991,
+      "drawTrMin": 0,
+      "drawTrMax": 9007199254740991,
+      "zPrePass": false,
+      "gi": false,
+      "postProcessing": {
+        "globalFog": {
+          "debug": false,
+          "enable": false,
+          "fogType": 0,
+          "height": 100,
+          "start": 400,
+          "end": 0,
+          "density": 0.02,
+          "ins": 1,
+          "fogColor": {
+            "r": 0.32941176470588235,
+            "g": 0.35294117647058826,
+            "b": 0.9372549019607843,
+            "a": 1
+          }
+        },
+        "ssao": {
+          "enable": false,
+          "radius": 0.15,
+          "bias": -0.1,
+          "aoPower": 2,
+          "debug": true
+        },
+        "outline": {
+          "enable": false,
+          "strength": 1,
+          "groupCount": 4,
+          "outlinePixel": 2,
+          "fadeOutlinePixel": 4,
+          "useAddMode": false,
+          "debug": true
+        },
+        "taa": {
+          "enable": false,
+          "jitterSeedCount": 8,
+          "blendFactor": 0.1,
+          "sharpFactor": 0.6,
+          "sharpPreBlurFactor": 0.5,
+          "temporalJitterScale": 0.13,
+          "debug": true
+        },
+        "gtao": {
+          "enable": false,
+          "darkFactor": 1,
+          "maxDistance": 5,
+          "maxPixel": 50,
+          "rayMarchSegment": 6,
+          "multiBounce": false,
+          "usePosFloat32": true,
+          "blendColor": true,
+          "debug": true
+        },
+        "ssr": {
+          "enable": false,
+          "pixelRatio": 1,
+          "fadeEdgeRatio": 0.2,
+          "rayMarchRatio": 0.5,
+          "fadeDistanceMin": 600,
+          "fadeDistanceMax": 2000,
+          "roughnessThreshold": 0.5,
+          "powDotRN": 0.2,
+          "mixThreshold": 0.1,
+          "debug": true
+        },
+        "bloom": {
+          "enable": false,
+          "blurX": 4,
+          "blurY": 4,
+          "strength": 0.25,
+          "radius": 1.3,
+          "luminosityThreshold": 0.98,
+          "debug": false
+        },
+        "fxaa": { "enable": true },
+        "depthOfView": {
+          "enable": false,
+          "iterationCount": 3,
+          "pixelOffset": 1,
+          "near": 150,
+          "far": 300
+        }
+      }
+    },
+    "shadow": {
+      "enable": true,
+      "type": "HARD",
+      "shadowBias": 0.0001,
+      "pointShadowBias": 0.002,
+      "shadowQuality": 2.5,
+      "shadowBound": 50,
+      "shadowSize": 1024,
+      "pointShadowSize": 1024,
+      "shadowSoft": 0.005,
+      "shadowNear": 1,
+      "shadowFar": 2000,
+      "needUpdate": true,
+      "autoUpdate": true,
+      "updateFrameRate": 2,
+      "debug": false
+    },
+    "gi": {
+      "enable": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "probeSpace": 64,
+      "probeXCount": 4,
+      "probeYCount": 2,
+      "probeZCount": 4,
+      "probeSize": 32,
+      "probeSourceTextureSize": 2048,
+      "octRTMaxSize": 2048,
+      "octRTSideSize": 16,
+      "maxDistance": 110.72,
+      "normalBias": 0.25,
+      "depthSharpness": 1,
+      "hysteresis": 0.98,
+      "lerpHysteresis": 0.01,
+      "irradianceChebyshevBias": 0.01,
+      "rayNumber": 144,
+      "irradianceDistanceBias": 32,
+      "indirectIntensity": 1,
+      "ddgiGamma": 2.2,
+      "bounceIntensity": 0.025,
+      "probeRoughness": 1,
+      "realTimeGI": false,
+      "debug": false,
+      "autoRenderProbe": false
+    },
+    "sky": {
+      "type": "HDRSKY",
+      "sky": null,
+      "skyExposure": 1,
+      "defaultFar": 1000000,
+      "defaultNear": 1
+    },
+    "light": { "maxLight": 4096 },
+    "material": { "materialChannelDebug": false, "materialDebug": false }
+  },
+  "view3DList": [{ "x": 0, "y": 0, "width": 0, "height": 0, "enable": true }],
+  "gltfList": ["nanhai/nanhai.gltf"]
+}

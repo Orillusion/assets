@@ -9,9 +9,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, 0, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
         },
         {
           "enable": true,
@@ -35,9 +35,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, 0, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ]
     },
@@ -49,18 +49,14 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
+          "scale": { "type": "v3", "data": [1, 1, 1] },
           "euler": {
             "type": "v3",
-            "numbers": [
-              -165.00000310021568, 65.00000307880222, 179.9999988045469
-            ]
+            "data": [-161.97311994080604, 64.50863814942484, 179.9999992724099]
           },
           "position": {
             "type": "v3",
-            "numbers": [
-              -77.03749662977212, 22.77607596902181, 35.923174643552684
-            ]
+            "data": [-75.53395464117543, 27.232756609378548, 36.013867658433966]
           }
         },
         {
@@ -85,22 +81,22 @@
           "mouseLeftFactor": 20,
           "smooth": true,
           "distance": 88,
-          "roll": -65,
-          "pitch": -15
+          "roll": -64.50864000000003,
+          "pitch": -18.026880000000002
         }
       ]
     },
     {
       "index": 3,
-      "name": "DirectionLight_ED485A7ACAC5E3F7",
+      "name": "DirectionLight_88ED662871095164",
       "renderLayer": 2,
       "components": [
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [20, 160, 0] },
-          "position": { "type": "v3", "numbers": [0, 30, -40] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [20, 160, 0] },
+          "position": { "type": "v3", "data": [0, 30, -40] }
         },
         {
           "enable": true,
@@ -115,7 +111,7 @@
             "quadratic": 0.032,
             "lightColor": {
               "type": "rgba",
-              "numbers": [1, 0.9209234507365888, 0.853759283180597, 1]
+              "data": [1, 0.9209234507365888, 0.853759283180597, 1]
             },
             "innerAngle": 0,
             "outerAngle": 1,
@@ -141,9 +137,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, -1, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, -1, 0] }
         },
         {
           "enable": true,
@@ -162,9 +158,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, 0, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
         },
         {
           "enable": true,
@@ -182,9 +178,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [0.15, 0.15, 0.15] },
-          "euler": { "type": "v3", "numbers": [20, 125, 0] },
-          "position": { "type": "v3", "numbers": [-16, -5, 36] }
+          "scale": { "type": "v3", "data": [0.15, 0.15, 0.15] },
+          "euler": { "type": "v3", "data": [20, 125, 0] },
+          "position": { "type": "v3", "data": [-16, -5, 36] }
         }
       ],
       "children": [7]
@@ -196,9 +192,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, 0, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ],
       "children": [8, 10]
@@ -210,9 +206,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, 0, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ],
       "children": [9]
@@ -225,9 +221,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, 0, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
         },
         {
           "enable": true,
@@ -244,9 +240,9 @@
         {
           "enable": true,
           "className": "Transform",
-          "scale": { "type": "v3", "numbers": [1, 1, 1] },
-          "euler": { "type": "v3", "numbers": [0, 0, 0] },
-          "position": { "type": "v3", "numbers": [0, 0, 0] }
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ]
     }
@@ -272,46 +268,24 @@
       "addressModeV": "clamp-to-edge",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": true
+      "useMipmap": true,
+      "usage": 31,
+      "mipmapCount": 4
     },
     {
       "index": 1,
       "name": "default-whiteTexture",
-      "asset": { "type": "default" },
-      "minFilter": "linear",
-      "magFilter": "linear",
-      "mipmapFilter": "linear",
-      "addressModeU": "repeat",
-      "addressModeV": "repeat",
-      "visibility": 2,
-      "format": "rgba8unorm",
-      "useMipmap": true
+      "asset": { "type": "default" }
     },
     {
       "index": 2,
       "name": "default-normalTexture",
-      "asset": { "type": "default" },
-      "minFilter": "linear",
-      "magFilter": "linear",
-      "mipmapFilter": "linear",
-      "addressModeU": "repeat",
-      "addressModeV": "repeat",
-      "visibility": 2,
-      "format": "rgba8unorm",
-      "useMipmap": true
+      "asset": { "type": "default" }
     },
     {
       "index": 3,
       "name": "default-blackTexture",
-      "asset": { "type": "default" },
-      "minFilter": "linear",
-      "magFilter": "linear",
-      "mipmapFilter": "linear",
-      "addressModeU": "repeat",
-      "addressModeV": "repeat",
-      "visibility": 2,
-      "format": "rgba8unorm",
-      "useMipmap": true
+      "asset": { "type": "default" }
     },
     {
       "index": 4,
@@ -324,7 +298,9 @@
       "addressModeV": "repeat",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": true
+      "useMipmap": true,
+      "usage": 31,
+      "mipmapCount": 11
     },
     {
       "index": 5,
@@ -337,7 +313,10 @@
       "addressModeV": "repeat",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": true
+      "useMipmap": true,
+      "url": "PBR/Duck/DuckCM.png",
+      "usage": 31,
+      "mipmapCount": 9
     }
   ],
   "materials": [
@@ -350,11 +329,11 @@
       "textures": { "baseMap": 0, "envMap": 0, "prefilterMap": 0 },
       "uniforms": {
         "shadowBias": 0.00035,
-        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
         "envIntensity": 1,
         "normalScale": 1,
         "roughness": 0,
@@ -369,9 +348,9 @@
         "ior": 1.5,
         "clearcoatFactor": 0,
         "clearcoatRoughnessFactor": 0,
-        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "clearcoatWeight": 0,
-        "eyesPos": { "type": "v3", "numbers": [0, 0, 0] },
+        "eyesPos": { "type": "v3", "data": [0, 0, 0] },
         "exposure": 1
       },
       "shaderState": {
@@ -432,11 +411,11 @@
       },
       "uniforms": {
         "shadowBias": 0.00035,
-        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
         "envIntensity": 1,
         "normalScale": 1,
         "roughness": 0.85,
@@ -451,7 +430,7 @@
         "ior": 1.5,
         "clearcoatFactor": 0,
         "clearcoatRoughnessFactor": 0,
-        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "clearcoatWeight": 0
       },
       "shaderState": {
@@ -513,11 +492,11 @@
       },
       "uniforms": {
         "shadowBias": 0.00035,
-        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
         "envIntensity": 1,
         "normalScale": 1,
         "roughness": 0.85,
@@ -532,7 +511,7 @@
         "ior": 1.5,
         "clearcoatFactor": 0,
         "clearcoatRoughnessFactor": 0,
-        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "clearcoatWeight": 0
       },
       "shaderState": {
@@ -594,11 +573,11 @@
       },
       "uniforms": {
         "shadowBias": 0.00035,
-        "transformUV1": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "transformUV2": { "type": "v4", "numbers": [0, 0, 1, 1] },
-        "baseColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "emissiveColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "numbers": [0.04, 0.04, 0.04, 1] },
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
         "envIntensity": 1,
         "normalScale": 1,
         "roughness": 0.15,
@@ -613,7 +592,7 @@
         "ior": 1.5,
         "clearcoatFactor": 0,
         "clearcoatRoughnessFactor": 0,
-        "clearcoatColor": { "type": "rgba", "numbers": [1, 1, 1, 1] },
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "clearcoatWeight": 0
       },
       "shaderState": {
@@ -674,7 +653,7 @@
       "height": 500,
       "segmentW": 4,
       "segmentH": 1,
-      "up": { "type": "v3", "numbers": [0, 1, 0] }
+      "up": { "type": "v3", "data": [0, 1, 0] }
     },
     {
       "index": 2,

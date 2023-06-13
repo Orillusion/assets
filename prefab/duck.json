@@ -1,0 +1,203 @@
+{
+  "version": { "major": 1, "minor": 0 },
+  "hierarchy": [
+    {
+      "index": 0,
+      "name": "GLTF_NO_NAME_SCENE",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [0.15, 0.15, 0.15] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [-16, 0, 36] }
+        }
+      ],
+      "children": [1]
+    },
+    {
+      "index": 1,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ],
+      "children": [2, 4]
+    },
+    {
+      "index": 2,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ],
+      "children": [3]
+    },
+    {
+      "index": 3,
+      "name": "LOD3spShape0",
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        },
+        {
+          "enable": true,
+          "className": "MeshRenderer",
+          "geometry": 0,
+          "materials": [0]
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "renderLayer": 2,
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [1, 1, 1] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [0, 0, 0] }
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "name": "DuckCM",
+      "asset": { "type": "net-image", "url": "PBR/Duck/DuckCM.png" },
+      "minFilter": "linear",
+      "magFilter": "linear",
+      "mipmapFilter": "linear",
+      "addressModeU": "repeat",
+      "addressModeV": "repeat",
+      "visibility": 2,
+      "format": "rgba8unorm",
+      "useMipmap": true,
+      "url": "PBR/Duck/DuckCM.png",
+      "usage": 31,
+      "mipmapCount": 9
+    },
+    {
+      "index": 1,
+      "name": "default-normalTexture",
+      "asset": { "type": "default" }
+    },
+    {
+      "index": 2,
+      "name": "default-blackTexture",
+      "asset": { "type": "default" }
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": "blinn3-fx",
+      "vsShader": "pbrlitshader",
+      "fsShader": "pbrlitshader",
+      "className": "LitMaterial",
+      "textures": {
+        "baseMap": 0,
+        "normalMap": 1,
+        "emissiveMap": 2,
+        "irradianceMap": 2,
+        "irradianceDepthMap": 2
+      },
+      "uniforms": {
+        "shadowBias": 0.00035,
+        "transformUV1": { "type": "v4", "data": [0, 0, 1, 1] },
+        "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
+        "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
+        "envIntensity": 1,
+        "normalScale": 1,
+        "roughness": 0.15,
+        "metallic": 0,
+        "ao": 1,
+        "roughness_min": 0,
+        "roughness_max": 1,
+        "metallic_min": 0,
+        "metallic_max": 1,
+        "emissiveIntensity": 1,
+        "alphaCutoff": 0,
+        "ior": 1.5,
+        "clearcoatFactor": 0,
+        "clearcoatRoughnessFactor": 0,
+        "clearcoatColor": { "type": "rgba", "data": [1, 1, 1, 1] },
+        "clearcoatWeight": 0
+      },
+      "shaderState": {
+        "blendMode": 0,
+        "depthCompare": "less",
+        "depthWriteEnabled": true,
+        "frontFace": "ccw",
+        "cullMode": "back",
+        "topology": "triangle-list",
+        "depthBias": 10,
+        "useLight": true,
+        "useProbe": false,
+        "acceptGI": true,
+        "acceptShadow": true,
+        "castShadow": true,
+        "castReflection": false,
+        "receiveEnv": true,
+        "renderLayer": 1000,
+        "renderOrder": 0,
+        "unclippedDepth": false,
+        "multisample": 0,
+        "useZ": true,
+        "splitTexture": false
+      },
+      "defineValue": {
+        "USE_BRDF": true,
+        "USE_SKELETON": false,
+        "USE_MORPHTARGETS": false,
+        "USE_TANGENT": false,
+        "USE_GI": true,
+        "USE_CASTSHADOW": true,
+        "USE_SHADOWMAPING": true,
+        "USE_LIGHT": true,
+        "USE_VERTXCOLOR": false,
+        "USE_PCF_SHADOW": false,
+        "USE_HARD_SHADOW": true,
+        "USE_SOFT_SHADOW": false,
+        "USE_IES_PROFILE": false,
+        "USE_WORLDPOS": true,
+        "USEGBUFFER": true,
+        "USEGI": false
+      },
+      "constValues": {}
+    }
+  ],
+  "geometries": [
+    {
+      "index": 0,
+      "name": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
+      "className": "GeometryBase",
+      "asset": {
+        "type": "gltf",
+        "data": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
+        "file": "PBR/Duck/Duck.gltf"
+      }
+    }
+  ],
+  "gltfList": ["PBR/Duck/Duck.gltf"]
+}

@@ -1,0 +1,24 @@
+{
+  "version": { "major": 1, "minor": 0 },
+  "hierarchy": [
+    {
+      "index": 0,
+      "name": "GLTF_NO_NAME_SCENE(clone)",
+      "renderLayer": 2,
+      "prefabRef": "prefab/duck.json",
+      "components": [
+        {
+          "enable": true,
+          "className": "Transform",
+          "scale": { "type": "v3", "data": [0.095, 0.095, 0.095] },
+          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "position": { "type": "v3", "data": [40, 0, 36] }
+        }
+      ]
+    }
+  ],
+  "textures": [],
+  "materials": [],
+  "geometries": [],
+  "prefabList": ["prefab/duck.json"]
+}
