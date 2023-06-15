@@ -11,7 +11,7 @@
           "enable": true,
           "className": "Transform",
           "scale": { "type": "v3", "data": [0.095, 0.095, 0.095] },
-          "euler": { "type": "v3", "data": [0, 0, 0] },
+          "euler": { "type": "v3", "data": [0, 180, 0] },
           "position": { "type": "v3", "data": [40, 0, 36] }
         }
       ]

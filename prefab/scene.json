@@ -52,11 +52,11 @@
           "scale": { "type": "v3", "data": [1, 1, 1] },
           "euler": {
             "type": "v3",
-            "data": [-161.97311994080604, 64.50863814942484, 179.9999992724099]
+            "data": [-165.00000310021568, 65.00000307880222, 179.9999988045469]
           },
           "position": {
             "type": "v3",
-            "data": [-75.53395464117543, 27.232756609378548, 36.013867658433966]
+            "data": [-77.03749662977212, 22.77607596902181, 35.923174643552684]
           }
         },
         {
@@ -81,14 +81,14 @@
           "mouseLeftFactor": 20,
           "smooth": true,
           "distance": 88,
-          "roll": -64.50864000000003,
-          "pitch": -18.026880000000002
+          "roll": -65,
+          "pitch": -15
         }
       ]
     },
     {
       "index": 3,
-      "name": "DirectionLight_88ED662871095164",
+      "name": "DirectionLight_EA27973FABF3CE8C",
       "renderLayer": 2,
       "components": [
         {
@@ -669,7 +669,7 @@
       "asset": {
         "type": "gltf",
         "data": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
-        "file": "PBR/Duck/Duck.gltf"
+        "url": "PBR/Duck/Duck.gltf"
       }
     }
   ],

@@ -97,7 +97,7 @@
     },
     {
       "index": 3,
-      "name": "DirectionLight_239A94CCD5C3B355",
+      "name": "DirectionLight_5D8A6E35CB4D6553",
       "renderLayer": 2,
       "components": [
         {
@@ -152,30 +152,11 @@
         },
         { "enable": true, "className": "MorphTargetBlender" }
       ],
-      "children": [5, 6]
+      "children": [5]
     },
     {
       "index": 5,
-      "name": "nanhai_gp",
-      "renderLayer": 2,
-      "components": [
-        {
-          "enable": true,
-          "className": "Transform",
-          "scale": {
-            "type": "v3",
-            "data": [
-              0.009999999776482582, 0.009999999776482582, 0.009999999776482582
-            ]
-          },
-          "euler": { "type": "v3", "data": [90.00000769819569, 0, 0] },
-          "position": { "type": "v3", "data": [0, 0, 0] }
-        }
-      ]
-    },
-    {
-      "index": 6,
-      "name": "Armature",
+      "name": "_Armature",
       "renderLayer": 2,
       "components": [
         {
@@ -191,10 +172,10 @@
           "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ],
-      "children": [7, 9, 18, 20]
+      "children": [6, 8, 17, 19]
     },
     {
-      "index": 7,
+      "index": 6,
       "name": "hair_geo",
       "renderLayer": 2,
       "components": [
@@ -206,10 +187,10 @@
           "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ],
-      "children": [8]
+      "children": [7]
     },
     {
-      "index": 8,
+      "index": 7,
       "name": "网格0",
       "renderLayer": 2,
       "components": [
@@ -229,7 +210,7 @@
       ]
     },
     {
-      "index": 9,
+      "index": 8,
       "name": "head_geo",
       "renderLayer": 2,
       "components": [
@@ -241,10 +222,10 @@
           "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ],
-      "children": [10, 11, 12, 13, 14, 15, 16, 17]
+      "children": [9, 10, 11, 12, 13, 14, 15, 16]
     },
     {
-      "index": 10,
+      "index": 9,
       "name": "网格.0050",
       "renderLayer": 2,
       "components": [
@@ -264,7 +245,7 @@
       ]
     },
     {
-      "index": 11,
+      "index": 10,
       "name": "网格.0051",
       "renderLayer": 2,
       "components": [
@@ -284,7 +265,7 @@
       ]
     },
     {
-      "index": 12,
+      "index": 11,
       "name": "网格.0052",
       "renderLayer": 2,
       "components": [
@@ -304,7 +285,7 @@
       ]
     },
     {
-      "index": 13,
+      "index": 12,
       "name": "网格.0053",
       "renderLayer": 2,
       "components": [
@@ -324,7 +305,7 @@
       ]
     },
     {
-      "index": 14,
+      "index": 13,
       "name": "网格.0054",
       "renderLayer": 2,
       "components": [
@@ -344,7 +325,7 @@
       ]
     },
     {
-      "index": 15,
+      "index": 14,
       "name": "网格.0055",
       "renderLayer": 2,
       "components": [
@@ -364,7 +345,7 @@
       ]
     },
     {
-      "index": 16,
+      "index": 15,
       "name": "网格.0056",
       "renderLayer": 2,
       "components": [
@@ -384,7 +365,7 @@
       ]
     },
     {
-      "index": 17,
+      "index": 16,
       "name": "网格.0057",
       "renderLayer": 2,
       "components": [
@@ -404,7 +385,7 @@
       ]
     },
     {
-      "index": 18,
+      "index": 17,
       "name": "yanjing_geo",
       "renderLayer": 2,
       "components": [
@@ -416,10 +397,10 @@
           "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ],
-      "children": [19]
+      "children": [18]
     },
     {
-      "index": 19,
+      "index": 18,
       "name": "网格.0010",
       "renderLayer": 2,
       "components": [
@@ -439,7 +420,7 @@
       ]
     },
     {
-      "index": 20,
+      "index": 19,
       "name": "Hips",
       "renderLayer": 2,
       "components": [
@@ -451,10 +432,10 @@
           "position": { "type": "v3", "data": [0, 0, 0] }
         }
       ],
-      "children": [21]
+      "children": [20]
     },
     {
-      "index": 21,
+      "index": 20,
       "name": "Spine",
       "renderLayer": 2,
       "components": [
@@ -471,10 +452,10 @@
           }
         }
       ],
-      "children": [22, 25, 50]
+      "children": [21, 24, 49]
     },
     {
-      "index": 22,
+      "index": 21,
       "name": "Neck",
       "renderLayer": 2,
       "components": [
@@ -491,10 +472,10 @@
           }
         }
       ],
-      "children": [23]
+      "children": [22]
     },
     {
-      "index": 23,
+      "index": 22,
       "name": "Head",
       "renderLayer": 2,
       "components": [
@@ -511,10 +492,10 @@
           }
         }
       ],
-      "children": [24]
+      "children": [23]
     },
     {
-      "index": 24,
+      "index": 23,
       "name": "HeadTop_End",
       "renderLayer": 2,
       "components": [
@@ -533,7 +514,7 @@
       ]
     },
     {
-      "index": 25,
+      "index": 24,
       "name": "LeftShoulder",
       "renderLayer": 2,
       "components": [
@@ -548,10 +529,10 @@
           }
         }
       ],
-      "children": [26]
+      "children": [25]
     },
     {
-      "index": 26,
+      "index": 25,
       "name": "LeftArm",
       "renderLayer": 2,
       "components": [
@@ -568,10 +549,10 @@
           }
         }
       ],
-      "children": [27]
+      "children": [26]
     },
     {
-      "index": 27,
+      "index": 26,
       "name": "LeftForeArm",
       "renderLayer": 2,
       "components": [
@@ -586,10 +567,10 @@
           }
         }
       ],
-      "children": [28]
+      "children": [27]
     },
     {
-      "index": 28,
+      "index": 27,
       "name": "LeftForeArm1",
       "renderLayer": 2,
       "components": [
@@ -612,10 +593,10 @@
           }
         }
       ],
-      "children": [29]
+      "children": [28]
     },
     {
-      "index": 29,
+      "index": 28,
       "name": "LeftHand",
       "renderLayer": 2,
       "components": [
@@ -636,10 +617,10 @@
           }
         }
       ],
-      "children": [30, 34, 38, 42, 46]
+      "children": [29, 33, 37, 41, 45]
     },
     {
-      "index": 30,
+      "index": 29,
       "name": "LeftHandPinky1",
       "renderLayer": 2,
       "components": [
@@ -661,10 +642,10 @@
           }
         }
       ],
-      "children": [31]
+      "children": [30]
     },
     {
-      "index": 31,
+      "index": 30,
       "name": "LeftHandPinky2",
       "renderLayer": 2,
       "components": [
@@ -690,10 +671,10 @@
           }
         }
       ],
-      "children": [32]
+      "children": [31]
     },
     {
-      "index": 32,
+      "index": 31,
       "name": "LeftHandPinky3",
       "renderLayer": 2,
       "components": [
@@ -718,10 +699,10 @@
           }
         }
       ],
-      "children": [33]
+      "children": [32]
     },
     {
-      "index": 33,
+      "index": 32,
       "name": "LeftHandPinky4",
       "renderLayer": 2,
       "components": [
@@ -749,7 +730,7 @@
       ]
     },
     {
-      "index": 34,
+      "index": 33,
       "name": "LeftHandRing1",
       "renderLayer": 2,
       "components": [
@@ -771,10 +752,10 @@
           }
         }
       ],
-      "children": [35]
+      "children": [34]
     },
     {
-      "index": 35,
+      "index": 34,
       "name": "LeftHandRing2",
       "renderLayer": 2,
       "components": [
@@ -800,10 +781,10 @@
           }
         }
       ],
-      "children": [36]
+      "children": [35]
     },
     {
-      "index": 36,
+      "index": 35,
       "name": "LeftHandRing3",
       "renderLayer": 2,
       "components": [
@@ -826,10 +807,10 @@
           }
         }
       ],
-      "children": [37]
+      "children": [36]
     },
     {
-      "index": 37,
+      "index": 36,
       "name": "LeftHandRing4",
       "renderLayer": 2,
       "components": [
@@ -854,7 +835,7 @@
       ]
     },
     {
-      "index": 38,
+      "index": 37,
       "name": "LeftHandMiddle1",
       "renderLayer": 2,
       "components": [
@@ -872,10 +853,10 @@
           }
         }
       ],
-      "children": [39]
+      "children": [38]
     },
     {
-      "index": 39,
+      "index": 38,
       "name": "LeftHandMiddle2",
       "renderLayer": 2,
       "components": [
@@ -900,10 +881,10 @@
           }
         }
       ],
-      "children": [40]
+      "children": [39]
     },
     {
-      "index": 40,
+      "index": 39,
       "name": "LeftHandMiddle3",
       "renderLayer": 2,
       "components": [
@@ -930,10 +911,10 @@
           }
         }
       ],
-      "children": [41]
+      "children": [40]
     },
     {
-      "index": 41,
+      "index": 40,
       "name": "LeftHandMiddle4",
       "renderLayer": 2,
       "components": [
@@ -961,7 +942,7 @@
       ]
     },
     {
-      "index": 42,
+      "index": 41,
       "name": "LeftHandIndex1",
       "renderLayer": 2,
       "components": [
@@ -984,10 +965,10 @@
           }
         }
       ],
-      "children": [43]
+      "children": [42]
     },
     {
-      "index": 43,
+      "index": 42,
       "name": "LeftHandIndex2",
       "renderLayer": 2,
       "components": [
@@ -1013,10 +994,10 @@
           }
         }
       ],
-      "children": [44]
+      "children": [43]
     },
     {
-      "index": 44,
+      "index": 43,
       "name": "LeftHandIndex3",
       "renderLayer": 2,
       "components": [
@@ -1042,10 +1023,10 @@
           }
         }
       ],
-      "children": [45]
+      "children": [44]
     },
     {
-      "index": 45,
+      "index": 44,
       "name": "LeftHandIndex4",
       "renderLayer": 2,
       "components": [
@@ -1073,7 +1054,7 @@
       ]
     },
     {
-      "index": 46,
+      "index": 45,
       "name": "LeftHandThumb1",
       "renderLayer": 2,
       "components": [
@@ -1094,10 +1075,10 @@
           }
         }
       ],
-      "children": [47]
+      "children": [46]
     },
     {
-      "index": 47,
+      "index": 46,
       "name": "LeftHandThumb2",
       "renderLayer": 2,
       "components": [
@@ -1121,10 +1102,10 @@
           }
         }
       ],
-      "children": [48]
+      "children": [47]
     },
     {
-      "index": 48,
+      "index": 47,
       "name": "LeftHandThumb3",
       "renderLayer": 2,
       "components": [
@@ -1147,10 +1128,10 @@
           }
         }
       ],
-      "children": [49]
+      "children": [48]
     },
     {
-      "index": 49,
+      "index": 48,
       "name": "LeftHandThumb4",
       "renderLayer": 2,
       "components": [
@@ -1176,7 +1157,7 @@
       ]
     },
     {
-      "index": 50,
+      "index": 49,
       "name": "RightShoulder",
       "renderLayer": 2,
       "components": [
@@ -1193,10 +1174,10 @@
           }
         }
       ],
-      "children": [51]
+      "children": [50]
     },
     {
-      "index": 51,
+      "index": 50,
       "name": "RightArm",
       "renderLayer": 2,
       "components": [
@@ -1213,10 +1194,10 @@
           }
         }
       ],
-      "children": [52]
+      "children": [51]
     },
     {
-      "index": 52,
+      "index": 51,
       "name": "RightForeArm",
       "renderLayer": 2,
       "components": [
@@ -1233,10 +1214,10 @@
           }
         }
       ],
-      "children": [53]
+      "children": [52]
     },
     {
-      "index": 53,
+      "index": 52,
       "name": "RightForeArm1",
       "renderLayer": 2,
       "components": [
@@ -1256,10 +1237,10 @@
           }
         }
       ],
-      "children": [54]
+      "children": [53]
     },
     {
-      "index": 54,
+      "index": 53,
       "name": "RightHand",
       "renderLayer": 2,
       "components": [
@@ -1281,10 +1262,10 @@
           }
         }
       ],
-      "children": [55, 59, 63, 67, 71]
+      "children": [54, 58, 62, 66, 70]
     },
     {
-      "index": 55,
+      "index": 54,
       "name": "RightHandThumb1",
       "renderLayer": 2,
       "components": [
@@ -1307,10 +1288,10 @@
           }
         }
       ],
-      "children": [56]
+      "children": [55]
     },
     {
-      "index": 56,
+      "index": 55,
       "name": "RightHandThumb2",
       "renderLayer": 2,
       "components": [
@@ -1332,10 +1313,10 @@
           }
         }
       ],
-      "children": [57]
+      "children": [56]
     },
     {
-      "index": 57,
+      "index": 56,
       "name": "RightHandThumb3",
       "renderLayer": 2,
       "components": [
@@ -1360,10 +1341,10 @@
           }
         }
       ],
-      "children": [58]
+      "children": [57]
     },
     {
-      "index": 58,
+      "index": 57,
       "name": "RightHandThumb4",
       "renderLayer": 2,
       "components": [
@@ -1388,7 +1369,7 @@
       ]
     },
     {
-      "index": 59,
+      "index": 58,
       "name": "RightHandIndex1",
       "renderLayer": 2,
       "components": [
@@ -1409,10 +1390,10 @@
           }
         }
       ],
-      "children": [60]
+      "children": [59]
     },
     {
-      "index": 60,
+      "index": 59,
       "name": "RightHandIndex2",
       "renderLayer": 2,
       "components": [
@@ -1434,10 +1415,10 @@
           }
         }
       ],
-      "children": [61]
+      "children": [60]
     },
     {
-      "index": 61,
+      "index": 60,
       "name": "RightHandIndex3",
       "renderLayer": 2,
       "components": [
@@ -1459,10 +1440,10 @@
           }
         }
       ],
-      "children": [62]
+      "children": [61]
     },
     {
-      "index": 62,
+      "index": 61,
       "name": "RightHandIndex4",
       "renderLayer": 2,
       "components": [
@@ -1490,7 +1471,7 @@
       ]
     },
     {
-      "index": 63,
+      "index": 62,
       "name": "RightHandMiddle1",
       "renderLayer": 2,
       "components": [
@@ -1513,10 +1494,10 @@
           }
         }
       ],
-      "children": [64]
+      "children": [63]
     },
     {
-      "index": 64,
+      "index": 63,
       "name": "RightHandMiddle2",
       "renderLayer": 2,
       "components": [
@@ -1542,10 +1523,10 @@
           }
         }
       ],
-      "children": [65]
+      "children": [64]
     },
     {
-      "index": 65,
+      "index": 64,
       "name": "RightHandMiddle3",
       "renderLayer": 2,
       "components": [
@@ -1571,10 +1552,10 @@
           }
         }
       ],
-      "children": [66]
+      "children": [65]
     },
     {
-      "index": 66,
+      "index": 65,
       "name": "RightHandMiddle4",
       "renderLayer": 2,
       "components": [
@@ -1602,7 +1583,7 @@
       ]
     },
     {
-      "index": 67,
+      "index": 66,
       "name": "RightHandRing1",
       "renderLayer": 2,
       "components": [
@@ -1625,10 +1606,10 @@
           }
         }
       ],
-      "children": [68]
+      "children": [67]
     },
     {
-      "index": 68,
+      "index": 67,
       "name": "RightHandRing2",
       "renderLayer": 2,
       "components": [
@@ -1650,10 +1631,10 @@
           }
         }
       ],
-      "children": [69]
+      "children": [68]
     },
     {
-      "index": 69,
+      "index": 68,
       "name": "RightHandRing3",
       "renderLayer": 2,
       "components": [
@@ -1678,10 +1659,10 @@
           }
         }
       ],
-      "children": [70]
+      "children": [69]
     },
     {
-      "index": 70,
+      "index": 69,
       "name": "RightHandRing4",
       "renderLayer": 2,
       "components": [
@@ -1703,7 +1684,7 @@
       ]
     },
     {
-      "index": 71,
+      "index": 70,
       "name": "RightHandPinky1",
       "renderLayer": 2,
       "components": [
@@ -1728,10 +1709,10 @@
           }
         }
       ],
-      "children": [72]
+      "children": [71]
     },
     {
-      "index": 72,
+      "index": 71,
       "name": "RightHandPinky2",
       "renderLayer": 2,
       "components": [
@@ -1756,10 +1737,10 @@
           }
         }
       ],
-      "children": [73]
+      "children": [72]
     },
     {
-      "index": 73,
+      "index": 72,
       "name": "RightHandPinky3",
       "renderLayer": 2,
       "components": [
@@ -1781,10 +1762,10 @@
           }
         }
       ],
-      "children": [74]
+      "children": [73]
     },
     {
-      "index": 74,
+      "index": 73,
       "name": "RightHandPinky4",
       "renderLayer": 2,
       "components": [
@@ -1818,7 +1799,7 @@
     {
       "index": 1,
       "name": "hair_Normal_1",
-      "asset": { "type": "net-image", "url": "nanhai/hair_Normal_1.png" },
+      "asset": { "type": "gltf-image", "url": "nanhai/nanhai.glb" },
       "minFilter": "linear",
       "magFilter": "linear",
       "mipmapFilter": "linear",
@@ -1826,7 +1807,9 @@
       "addressModeV": "repeat",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": true
+      "useMipmap": true,
+      "usage": 31,
+      "mipmapCount": 12
     },
     {
       "index": 2,
@@ -1836,7 +1819,7 @@
     {
       "index": 3,
       "name": "ya_BaseColor",
-      "asset": { "type": "net-image", "url": "nanhai/ya_BaseColor.png" },
+      "asset": { "type": "gltf-image", "url": "nanhai/nanhai.glb" },
       "minFilter": "linear",
       "magFilter": "linear",
       "mipmapFilter": "linear",
@@ -1844,7 +1827,9 @@
       "addressModeV": "repeat",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": true
+      "useMipmap": true,
+      "usage": 31,
+      "mipmapCount": 10
     },
     {
       "index": 4,
@@ -1853,8 +1838,8 @@
     },
     {
       "index": 5,
-      "name": "body_BaseColor_1001",
-      "asset": { "type": "net-image", "url": "nanhai/body_BaseColor_1001.png" },
+      "name": "body_BaseColor.1001",
+      "asset": { "type": "gltf-image", "url": "nanhai/nanhai.glb" },
       "minFilter": "linear",
       "magFilter": "linear",
       "mipmapFilter": "linear",
@@ -1862,12 +1847,14 @@
       "addressModeV": "repeat",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": true
+      "useMipmap": true,
+      "usage": 31,
+      "mipmapCount": 12
     },
     {
       "index": 6,
-      "name": "body_BaseColor_1002",
-      "asset": { "type": "net-image", "url": "nanhai/body_BaseColor_1002.png" },
+      "name": "body_BaseColor.1002",
+      "asset": { "type": "gltf-image", "url": "nanhai/nanhai.glb" },
       "minFilter": "linear",
       "magFilter": "linear",
       "mipmapFilter": "linear",
@@ -1875,7 +1862,9 @@
       "addressModeV": "repeat",
       "visibility": 2,
       "format": "rgba8unorm",
-      "useMipmap": true
+      "useMipmap": true,
+      "usage": 31,
+      "mipmapCount": 12
     }
   ],
   "materials": [
@@ -2772,7 +2761,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格POSITIONNORMALTEXCOORD_0indices:3material:0",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       }
     },
     {
@@ -2782,7 +2771,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:7material:1",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2793,7 +2782,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:115material:2",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2804,7 +2793,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:223material:3",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2815,7 +2804,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:331material:4",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2826,7 +2815,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:439material:5",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2837,7 +2826,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:547material:6",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2848,7 +2837,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:655material:7",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2859,7 +2848,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.005POSITIONNORMALTEXCOORD_0indices:763material:8",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       },
       "morphTargetsRelative": true
     },
@@ -2870,7 +2859,7 @@
       "asset": {
         "type": "gltf",
         "data": "网格.001POSITIONNORMALTEXCOORD_0indices:871material:9",
-        "file": "nanhai/nanhai.gltf"
+        "url": "nanhai/nanhai.glb"
       }
     }
   ],
@@ -3035,5 +3024,5 @@
     "material": { "materialChannelDebug": false, "materialDebug": false }
   },
   "view3DList": [{ "x": 0, "y": 0, "width": 0, "height": 0, "enable": true }],
-  "gltfList": ["nanhai/nanhai.gltf"]
+  "gltfList": ["nanhai/nanhai.glb"]
 }

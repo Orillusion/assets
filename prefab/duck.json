@@ -195,7 +195,7 @@
       "asset": {
         "type": "gltf",
         "data": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
-        "file": "PBR/Duck/Duck.gltf"
+        "url": "PBR/Duck/Duck.gltf"
       }
     }
   ],
