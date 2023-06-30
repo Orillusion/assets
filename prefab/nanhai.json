@@ -22,8 +22,8 @@
             "mieG": 0.76,
             "mieHeight": 1200,
             "eyePos": 1500,
-            "sunX": 0.71,
-            "sunY": 0.56,
+            "sunX": 0.6944444444444444,
+            "sunY": 0.6111111111111112,
             "sunBrightness": 1,
             "displaySun": true,
             "defaultTextureCubeSize": 512,
@@ -61,11 +61,13 @@
           "scale": { "type": "v3", "data": [1, 1, 1] },
           "euler": {
             "type": "v3",
-            "data": [-165.00000310021568, 65.00000307880222, 179.9999988045469]
+            "data": [
+              -170.81436039727103, -3.8372397574493955, -179.99999998462965
+            ]
           },
           "position": {
             "type": "v3",
-            "data": [-87.54260980655924, 25.881904510252056, 40.82178936767351]
+            "data": [4.9970748334958035, 12.07464293611679, 74.50227367732822]
           }
         },
         {
@@ -89,15 +91,15 @@
           "mouseRightFactor": 0.5,
           "mouseLeftFactor": 20,
           "smooth": true,
-          "distance": 100,
-          "roll": -65,
-          "pitch": -15
+          "distance": 75.6396492721759,
+          "roll": 3.8372400000000146,
+          "pitch": -9.185639999999937
         }
       ]
     },
     {
       "index": 3,
-      "name": "DirectionLight_5D8A6E35CB4D6553",
+      "name": "DirectionLight_7A20BFE725E5B016",
       "renderLayer": 2,
       "components": [
         {
@@ -117,7 +119,7 @@
             "radius": 0.5,
             "intensity": 20,
             "linear": 0,
-            "quadratic": 0.032,
+            "quadratic": 0.3,
             "lightColor": {
               "type": "rgba",
               "data": [1, 0.9209234507365888, 0.853759283180597, 1]
@@ -1940,7 +1942,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 1,
@@ -1966,8 +1971,8 @@
           ]
         },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2024,7 +2029,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 2,
@@ -2044,8 +2052,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2067,7 +2075,7 @@
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2087,6 +2095,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2103,7 +2112,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 3,
@@ -2123,8 +2135,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2146,7 +2158,7 @@
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2166,6 +2178,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2182,7 +2195,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 4,
@@ -2202,8 +2218,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2225,7 +2241,7 @@
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2245,6 +2261,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2261,7 +2278,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 5,
@@ -2281,8 +2301,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [0, 0, 0, 0] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2300,11 +2320,11 @@
         "clearcoatWeight": 0
       },
       "shaderState": {
-        "blendMode": 0,
+        "blendMode": 2,
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2324,6 +2344,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2340,7 +2361,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": true,
+      "enable": true
     },
     {
       "index": 6,
@@ -2360,8 +2384,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [0, 0, 0, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2383,7 +2407,7 @@
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2403,6 +2427,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2419,7 +2444,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 7,
@@ -2442,8 +2470,8 @@
           "data": [0.02199999988079071, 0.005431067664176226, 0, 1]
         },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2465,7 +2493,7 @@
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2485,6 +2513,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2501,7 +2530,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 8,
@@ -2521,8 +2553,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2544,7 +2576,7 @@
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2564,6 +2596,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2580,7 +2613,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 9,
@@ -2605,8 +2641,8 @@
           ]
         },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2628,7 +2664,7 @@
         "depthCompare": "less",
         "depthWriteEnabled": true,
         "frontFace": "ccw",
-        "cullMode": "back",
+        "cullMode": "none",
         "topology": "triangle-list",
         "depthBias": 10,
         "useLight": true,
@@ -2648,6 +2684,7 @@
       "defineValue": {
         "USE_BRDF": true,
         "USE_ALPHACUT": false,
+        "USE_CLEARCOAT": true,
         "USE_SKELETON": false,
         "USE_MORPHTARGETS": true,
         "USE_TANGENT": false,
@@ -2664,7 +2701,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 10,
@@ -2685,8 +2725,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [0, 0, 0, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.5527864098548889,
         "metallic": 0,
@@ -2743,14 +2783,17 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     }
   ],
   "geometries": [
     {
       "index": 0,
       "className": "SphereGeometry",
-      "radius": 1000000,
+      "radius": 65536,
       "widthSegments": 20,
       "heightSegments": 20
     },
@@ -2762,7 +2805,8 @@
         "type": "gltf",
         "data": "网格POSITIONNORMALTEXCOORD_0indices:3material:0",
         "url": "nanhai/nanhai.glb"
-      }
+      },
+      "morphTargetsRelative": false
     },
     {
       "index": 2,
@@ -2860,7 +2904,8 @@
         "type": "gltf",
         "data": "网格.001POSITIONNORMALTEXCOORD_0indices:871material:9",
         "url": "nanhai/nanhai.glb"
-      }
+      },
+      "morphTargetsRelative": false
     }
   ],
   "engineSetting": {
@@ -2888,17 +2933,24 @@
           "debug": false,
           "enable": false,
           "fogType": 0,
-          "height": 100,
+          "fogHeightScale": 0.1,
           "start": 400,
-          "end": 0,
+          "end": 10,
           "density": 0.02,
-          "ins": 1,
+          "ins": 0.5,
+          "skyFactor": 0.5,
+          "skyRoughness": 0.4,
+          "overrideSkyFactor": 0.8,
           "fogColor": {
-            "r": 0.32941176470588235,
-            "g": 0.35294117647058826,
-            "b": 0.9372549019607843,
+            "r": 0.4392156862745098,
+            "g": 0.23921568627450981,
+            "b": 0.5450980392156862,
             "a": 1
-          }
+          },
+          "falloff": 0.7,
+          "rayLength": 200,
+          "scatteringExponent": 2.7,
+          "dirHeightLine": 10
         },
         "ssao": {
           "enable": false,
@@ -3017,7 +3069,7 @@
       "type": "HDRSKY",
       "sky": null,
       "skyExposure": 1,
-      "defaultFar": 1000000,
+      "defaultFar": 65536,
       "defaultNear": 1
     },
     "light": { "maxLight": 4096 },

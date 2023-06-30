@@ -52,11 +52,11 @@
           "scale": { "type": "v3", "data": [1, 1, 1] },
           "euler": {
             "type": "v3",
-            "data": [-165.00000310021568, 65.00000307880222, 179.9999988045469]
+            "data": [-164.1532234329162, 73.72428464941774, 179.99999800299057]
           },
           "position": {
             "type": "v3",
-            "data": [-77.03749662977212, 22.77607596902181, 35.923174643552684]
+            "data": [-81.26294674338699, 24.029788071299006, 23.725572107536195]
           }
         },
         {
@@ -81,14 +81,14 @@
           "mouseLeftFactor": 20,
           "smooth": true,
           "distance": 88,
-          "roll": -65,
-          "pitch": -15
+          "roll": -73.7242800000002,
+          "pitch": -15.846780000000027
         }
       ]
     },
     {
       "index": 3,
-      "name": "DirectionLight_EA27973FABF3CE8C",
+      "name": "DirectionLight_7535E33BA0092163",
       "renderLayer": 2,
       "components": [
         {
@@ -108,7 +108,7 @@
             "radius": 0.5,
             "intensity": 20,
             "linear": 0,
-            "quadratic": 0.032,
+            "quadratic": 0.3,
             "lightColor": {
               "type": "rgba",
               "data": [1, 0.9209234507365888, 0.853759283180597, 1]
@@ -392,7 +392,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 1,
@@ -415,8 +418,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.85,
         "metallic": 0.1,
@@ -473,7 +476,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 2,
@@ -496,8 +502,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.85,
         "metallic": 0.1,
@@ -554,7 +560,10 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     },
     {
       "index": 3,
@@ -577,8 +586,8 @@
         "transformUV2": { "type": "v4", "data": [0, 0, 1, 1] },
         "baseColor": { "type": "rgba", "data": [1, 1, 1, 1] },
         "emissiveColor": { "type": "rgba", "data": [1, 1, 1, 1] },
-        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 1] },
-        "envIntensity": 1,
+        "materialF0": { "type": "v4", "data": [0.04, 0.04, 0.04, 0.96] },
+        "envIntensity": 0.75,
         "normalScale": 1,
         "roughness": 0.15,
         "metallic": 0,
@@ -635,14 +644,17 @@
         "USEGBUFFER": true,
         "USEGI": false
       },
-      "constValues": {}
+      "constValues": {},
+      "sort": 3000,
+      "transparent": false,
+      "enable": true
     }
   ],
   "geometries": [
     {
       "index": 0,
       "className": "SphereGeometry",
-      "radius": 1000000,
+      "radius": 65536,
       "widthSegments": 20,
       "heightSegments": 20
     },
@@ -670,7 +682,8 @@
         "type": "gltf",
         "data": "LOD3spShapeNORMALPOSITIONTEXCOORD_0indices:0material:0",
         "url": "PBR/Duck/Duck.gltf"
-      }
+      },
+      "morphTargetsRelative": false
     }
   ],
   "engineSetting": {
@@ -698,17 +711,24 @@
           "debug": false,
           "enable": false,
           "fogType": 0,
-          "height": 100,
+          "fogHeightScale": 0.1,
           "start": 400,
-          "end": 0,
+          "end": 10,
           "density": 0.02,
-          "ins": 1,
+          "ins": 0.5,
+          "skyFactor": 0.5,
+          "skyRoughness": 0.4,
+          "overrideSkyFactor": 0.8,
           "fogColor": {
-            "r": 0.32941176470588235,
-            "g": 0.35294117647058826,
-            "b": 0.9372549019607843,
+            "r": 0.4392156862745098,
+            "g": 0.23921568627450981,
+            "b": 0.5450980392156862,
             "a": 1
-          }
+          },
+          "falloff": 0.7,
+          "rayLength": 200,
+          "scatteringExponent": 2.7,
+          "dirHeightLine": 10
         },
         "ssao": {
           "enable": false,
@@ -827,7 +847,7 @@
       "type": "HDRSKY",
       "sky": null,
       "skyExposure": 0.5,
-      "defaultFar": 1000000,
+      "defaultFar": 65536,
       "defaultNear": 1
     },
     "light": { "maxLight": 4096 },
